@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing on Sign up Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    
+    <!-- main class for sign in page -->
+     <div class="Kotak-Tengah">
+        <!-- class sign in -->
+        <div class="signin">
+            <h2>Create An Account</h2>
+            <!-- form -->
+             <form id="sign-form">
+                <!-- firstname -->
+                <div class="box-input">
+                    <input type="text" id="fname" placeholder="Firstname" required>
+                </div>
+                <!-- last name -->
+                <div class="box-input">
+                    <input type="text" id="lname" placeholder="Lastname" required>
+                </div>
+                <!-- email -->
+                <div class="box-input">
+                    <input type="email" id="emailId" placeholder="Email" required>
+                </div>
+                <!-- password -->
+                <div class="box-input">
+                    <input type="password" id="passwd" placeholder="Password" required>
+                </div>
+                <!-- class buttn -->
+                <button type="submit" class="buttn">Sign Up</button>
+                <!-- sign in using email google -->
+                 <div><span>OR</span></div>
+                <div class="social-icon">
+                    <!-- pakai boxicon aja -->
+                    <a href="https://www.google.com/" target="_blank"><i class='bx bxl-google'></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://www.github.com/" target="_blank"><i class='bx bxl-github' ></i></a>
+                </div>
+             </form>
+        </div>
+     </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
