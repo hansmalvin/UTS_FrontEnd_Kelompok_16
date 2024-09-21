@@ -69,14 +69,288 @@ section{
 }
 .content span{
     font-size: 5rem;
-    -webkit-text-stroke: 2px blue;
-    color: transparent;
     letter-spacing: normal;
     font-weight: bold;
 }
 
 .content h1{
-    color: #2fff00;
-    font-size: 7rem;
+    -webkit-text-stroke: 2px #2fff00;
+    color: transparent;
+    letter-spacing: normal;
+    font-size: 8rem;
     font-weight: bold;
 }
+.content h2{
+    color: whitesmoke;
+    font-size: 6rem;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+.content h3 {
+    font-size: 130px;
+    -webkit-text-stroke: 2px #2fff00;
+    color: transparent;
+    letter-spacing: normal;
+}
+
+.box-container_1 {
+    height: 700px;
+    background-color: rgb(24, 40, 35);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex; 
+    gap: 10px; 
+}
+
+.box-container_1_1 {
+    width: 900px;
+    height: 680px;
+    background-color: rgb(23, 24, 25);
+
+}
+
+.box-container_1_2 {
+    width: 505px;
+    height: 680px;
+    background-color: rgb(136, 50, 50);
+    overflow: hidden;
+    position: relative;
+}
+
+.box-container_1_2 img {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.box-container_1_2 img.active {
+    opacity: 1;
+}
+
+
+
+.box-container_1_2 button {
+    position: absolute;
+    bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+.next {
+    left: 60px;
+}
+
+
+.box-container_2 {
+    height: 200px;
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; /* Mengatur agar box-container_2 berada di tengah */
+    align-items: center;
+    position: relative; /* Agar teks bergerak relatif terhadap container */
+}
+
+.box-container_2_1 {
+    width: 100%; /* Menggunakan seluruh ruang */
+    height: 60px; /* Sesuaikan dengan box-container_2 */
+    background-color: rgb(83, 56, 153);
+    border-radius: 10px;
+    display: flex; /* Agar teks bisa dipusatkan */
+    align-items: center;
+    position: absolute; /* Ganti ke posisi absolut */
+    top: 20px; /* Atur posisi vertikal sesuai keinginan */
+    left: 0; /* Agar mulai dari kiri */
+    overflow: hidden; /* Agar teks tidak keluar dari box */
+    transform: rotate(-4deg);
+    z-index: 1;
+}
+
+.box-container_2_2 {
+    width: 100%; /* Menggunakan seluruh ruang */
+    height: 60px; /* Sesuaikan dengan box-container_2 */
+    background-color: rgb(153, 56, 129);
+    border-radius: 10px;
+    display: flex; /* Agar teks bisa dipusatkan */
+    align-items: center;
+    position: absolute; /* Ganti ke posisi absolut */
+    top: 20px; /* Atur posisi vertikal sesuai keinginan */
+    left: 0; /* Agar mulai dari kiri */
+    overflow: hidden; /* Agar teks tidak keluar dari box */
+    transform: rotate(5deg);
+    z-index: 2; /* Pastikan box ini di atas */
+}
+
+
+.moving-text {
+    position: absolute; /* Tetap di posisi absolut */
+    white-space: nowrap; /* Agar teks tidak terpotong */
+    animation: moveText 5s linear infinite; /* Mengatur animasi */
+}
+
+@keyframes moveText {
+    0% {
+        left: 0; /* Mulai dari ujung kiri box-container_2_1 */
+    }
+    100% {
+        left: calc(100% - 100px); /* Berhenti sebelum keluar dari kanan */
+    }
+}
+
+
+.box-container_3 {
+
+    height: 300px;
+    background-color: rgb(122, 39, 84);
+    border-radius: 10px;
+    display: flex;
+    gap: 15%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.box-container_3_1{
+    width: 60%;
+    height: 90px;
+    border-radius: 10px;
+    background-color: rosybrown;
+    
+}
+
+.box-container_3_2{
+    width: 60%;
+    height: 90px;
+    border-radius: 10px;
+    background-color: royalblue;
+    padding-top: 25px;
+}
+
+.box-container_3_2_1{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: blueviolet;
+}
+
+.box-container_3 p{
+    color: whitesmoke;
+    font-size: 20px;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+.box-container_3 h1{
+    color: whitesmoke;
+    font-size: 28px;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+.box-container_4 {
+    height: 400px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    display: flex;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10%;
+}
+
+.box-container_4 h1 {
+    color: whitesmoke;
+    font-size: 25px;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+.box-container_4 h2 {
+    color: #2fff00;
+    font-size: 17px;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+.box-container_4 h3 {
+    color: whitesmoke;
+    font-size: 18px;
+    letter-spacing: normal;
+}
+
+
+.box-container_4_1 {
+    width: 28%;
+    height: 380px;
+    border-radius: 10px;
+    background-color: rgb(222, 163, 86);
+    
+}
+
+.box-container_4_2 {
+    width: 28%;
+    height: 380px;
+    border-radius: 10px;
+    background-color: rgb(222, 163, 86);
+    display: flex;
+    
+}
+
+.box-container_4_2_1 {
+    width: 50%;
+    height: 380px;
+    border-radius: 10px;
+    background-color: rgb(128, 39, 113);
+}
+
+.box-container_4_2_2 {
+    width: 50%;
+    height: 380px;
+    border-radius: 10px;
+    background-color: rgb(57, 207, 102);
+}
+
+.box-container_4_3 {
+    width: 28%;
+    height: 380px;
+    border-radius: 10px;
+    background-color: rgb(222, 163, 86);
+    display: flex;    
+    flex-direction: column;
+}
+
+.box-container_4_3_1 {
+    width: 100%;
+    height: 120px;
+    background-color: silver;
+    border-radius: 10px;
+}
+
+.box-container_4_3_2 {
+    width: 100%;
+    height: 150px;
+    background-color: darkkhaki;
+    border-radius: 10px;
+}
+
+.box-container_4_3_3 {
+    width: 100%;
+    height: 110px;
+    background-color: rgb(85, 150, 138);
+    border-radius: 10px;
+}
+
+
+
+
+
+
