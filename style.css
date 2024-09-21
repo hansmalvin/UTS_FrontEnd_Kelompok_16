@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #0a0a0a;
+    color: #2fff00;
+}
+
+.header{
+    /* position: sticky; */
+    position: relative;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 90%;
+    margin: 4rem auto;
+    border-radius: 6px;
+    padding: 2rem 3%;
+    background: transparent;
+    display: flex;
+    /* opacity: .7; */
+    justify-content: space-between;
+    align-items: center;
+    background: red;
+    /* z-index: 100; */
+}
+
+.logo{
+    font-size: 2.5rem;
+    color: yellow;
+}
+
+.header img{
+
+}
+
+nav a{
+    position: relative;
+    margin-left: 15px;
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.sign-up{
+    font-size: 1.7rem;
+    color: #262626;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.content{
+
+}
+.content span{
+    font-size: 5rem;
+    -webkit-text-stroke: 2px blue;
+    color: transparent;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+.content h1{
+    color: #2fff00;
+    font-size: 7rem;
+    font-weight: bold;
+}
