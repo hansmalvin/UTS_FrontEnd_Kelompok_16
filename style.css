@@ -1,11 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    border: none;
-    outline: none;
+    font-family: "Helvetica Neue", "Oswald",Helvetica, Arial, sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -30,7 +30,6 @@ body {
     border-radius: 6px;
     padding: 2rem 3%;
     background: transparent;
-    display: flex;
     /* opacity: .7; */
     justify-content: space-between;
     align-items: center;
@@ -65,7 +64,7 @@ section{
 }
 
 .content{
-
+    
 }
 .content span{
     font-size: 5rem;
