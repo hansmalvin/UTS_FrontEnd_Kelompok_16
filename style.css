@@ -16,7 +16,7 @@ html{
 
 body {
     background: #0a0a0a;
-    color: #2fff00;
+    color: #ffffff;
 }
 
 .header{
@@ -34,13 +34,14 @@ body {
     /* opacity: .7; */
     justify-content: space-between;
     align-items: center;
-    background: red;
+    background: #563d3d;
+    /* border: 2px solid #2fff00; */
     /* z-index: 100; */
 }
 
 .logo{
-    font-size: 2.5rem;
-    color: yellow;
+    font-size: 4rem;
+    color: #80ad05; 
 }
 
 .header img{
@@ -50,13 +51,13 @@ body {
 nav a{
     position: relative;
     margin-left: 15px;
-    font-size: 1.7rem;
-    color: #fff;
+    font-size: 2rem;
+    color: #80ad05;
 }
 
 .sign-up{
-    font-size: 1.7rem;
-    color: #262626;
+    font-size: 2rem;
+    color: #80ad05;
 }
 
 section{
@@ -93,7 +94,7 @@ section{
     color: transparent;
     letter-spacing: normal;
 }
-
+    
 .box-container_1 {
     height: 700px;
     background-color: rgb(24, 40, 35);
@@ -113,10 +114,31 @@ section{
 .box-container_1_2 {
     width: 505px;
     height: 680px;
-    background-color: rgb(136, 50, 50);
+    background-image: url(/assets/Cloud.jpeg);
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
     position: relative;
+    background-repeat: no-repeat;
+    animation: change 12s infinite ease-in-out;
+    transition: background-image 2s ease-in-out;
 }
+
+@keyframes change {
+    0% {
+        background-image: url(/assets/FairyTest.jpeg);
+    }
+    33% {
+        background-image: url(/assets/Cloud.jpeg);
+    }
+    66% {
+        background-image: url(/assets/TrainTest.jpeg);
+    }
+    100% {
+        background-image: url(/assets/FairyTest.jpeg);
+    }
+}
+
 
 .box-container_1_2 img {
     opacity: 0;
@@ -149,58 +171,100 @@ section{
 
 .box-container_2 {
     height: 200px;
-    background-color: bisque;
+    /* background-color: bisque; */
     padding: 10px;
     border-radius: 10px;
     display: flex;
-    justify-content: center; /* Mengatur agar box-container_2 berada di tengah */
+    justify-content: center;
     align-items: center;
-    position: relative; /* Agar teks bergerak relatif terhadap container */
+    position: relative;
+}
+
+.box-container_2 h1 {
+    -webkit-text-stroke: #2fff00;
+}
+
+.box-container_2_1, .box-container_2_2 {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    overflow: hidden;
 }
 
 .box-container_2_1 {
-    width: 100%; /* Menggunakan seluruh ruang */
-    height: 60px; /* Sesuaikan dengan box-container_2 */
-    background-color: rgb(83, 56, 153);
-    border-radius: 10px;
-    display: flex; /* Agar teks bisa dipusatkan */
-    align-items: center;
-    position: absolute; /* Ganti ke posisi absolut */
-    top: 20px; /* Atur posisi vertikal sesuai keinginan */
-    left: 0; /* Agar mulai dari kiri */
-    overflow: hidden; /* Agar teks tidak keluar dari box */
+    background-color: rgb(152, 205, 77);
     transform: rotate(-4deg);
     z-index: 1;
 }
 
 .box-container_2_2 {
-    width: 100%; /* Menggunakan seluruh ruang */
-    height: 60px; /* Sesuaikan dengan box-container_2 */
-    background-color: rgb(153, 56, 129);
-    border-radius: 10px;
-    display: flex; /* Agar teks bisa dipusatkan */
-    align-items: center;
-    position: absolute; /* Ganti ke posisi absolut */
-    top: 20px; /* Atur posisi vertikal sesuai keinginan */
-    left: 0; /* Agar mulai dari kiri */
-    overflow: hidden; /* Agar teks tidak keluar dari box */
+    background-color: rgb(152, 205, 77);
     transform: rotate(5deg);
-    z-index: 2; /* Pastikan box ini di atas */
+    z-index: 2;
+}
+
+.LeftToRight h1, .RightToLeft h1 {
+    white-space: nowrap;
+    
+}
+
+.LeftToRight {
+    animation: scroll-left-right 10s linear infinite;
+}
+
+.RightToLeft {
+    animation: scroll-right-left 10s linear infinite;
+}
+
+/* Animasi teks dari kiri ke kanan */
+@keyframes scroll-left-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Animasi teks dari kanan ke kiri */
+@keyframes scroll-right-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 
 .moving-text {
-    position: absolute; /* Tetap di posisi absolut */
-    white-space: nowrap; /* Agar teks tidak terpotong */
-    animation: moveText 5s linear infinite; /* Mengatur animasi */
+    position: absolute;
+    white-space: nowrap;
+    animation: moveText 10s linear infinite;
+    animation-delay: 0s; /* Awal tanpa delay */
 }
+
+.moving-text:nth-child(2) {
+    animation-delay: 3s; /* Teks kedua muncul setelah 3 detik */
+}
+
+.moving-text:nth-child(3) {
+    animation-delay: 6s; /* Teks ketiga muncul setelah 6 detik */
+}
+
+/* Anda bisa tambahkan lebih banyak elemen .moving-text dan delay jika diperlukan */
 
 @keyframes moveText {
     0% {
-        left: 0; /* Mulai dari ujung kiri box-container_2_1 */
+        left: 100%; /* Mulai dari luar kanan box-container */
     }
     100% {
-        left: calc(100% - 100px); /* Berhenti sebelum keluar dari kanan */
+        left: -100%; /* Berhenti setelah teks keluar dari kiri box-container */
     }
 }
 
@@ -208,21 +272,23 @@ section{
 .box-container_3 {
 
     height: 300px;
-    background-color: rgb(122, 39, 84);
-    border-radius: 10px;
+    /* background-color: rgb(122, 39, 84); */
+    /* border-radius: 10px; */
     display: flex;
     gap: 15%;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 100px;
     padding-bottom: 100px;
+    /* border: 2px solid #2fff00; */
+    /* box-shadow: 0 4px 8px #2fff00 */
 }
 
 .box-container_3_1{
     width: 60%;
     height: 90px;
     border-radius: 10px;
-    background-color: rosybrown;
+    /* background-color: rosybrown; */
     
 }
 
@@ -230,16 +296,49 @@ section{
     width: 60%;
     height: 90px;
     border-radius: 10px;
-    background-color: royalblue;
+    /* background-color: rgb(156, 166, 194); */
     padding-top: 25px;
 }
 
 .box-container_3_2_1{
-    width: 100%;
-    height: 40px;
+    text-align: center;
+    /* background-color: #fff; */
     border-radius: 10px;
-    background-color: blueviolet;
 }
+
+/* Input Email */
+.email-input {
+    flex: 1;
+    width: 400px;
+    padding: 15px;
+    font-size: 16px;
+    /* border: 2px solid #fefffe; */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.email-input:focus {
+    border-color: #2fff00;
+}
+
+/* Tombol Submit */
+.submit-btn {
+    /* background-color: #007bff; */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2fff00;
+}
+
 
 .box-container_3 p{
     color: whitesmoke;
@@ -257,7 +356,7 @@ section{
 
 .box-container_4 {
     height: 400px;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite;  */
     border-radius: 10px;
     display: flex;
     padding-left: 8%;
@@ -265,6 +364,8 @@ section{
     padding-top: 10px;
     padding-bottom: 10px;
     gap: 10%;
+    border: 2px solid #2fff00;
+    box-shadow: 0 4px 8px #2fff00
 }
 
 .box-container_4 h1 {
@@ -287,12 +388,19 @@ section{
     letter-spacing: normal;
 }
 
+.box-container_4 h4 {
+    color: #2fff00;
+    font-size: 4em;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
 
 .box-container_4_1 {
     width: 28%;
     height: 380px;
     border-radius: 10px;
-    background-color: rgb(222, 163, 86);
+    /* background-color: rgb(222, 163, 86); */
     
 }
 
@@ -300,7 +408,7 @@ section{
     width: 28%;
     height: 380px;
     border-radius: 10px;
-    background-color: rgb(222, 163, 86);
+    /* background-color: rgb(222, 163, 86); */
     display: flex;
     
 }
@@ -309,21 +417,41 @@ section{
     width: 50%;
     height: 380px;
     border-radius: 10px;
-    background-color: rgb(128, 39, 113);
+    /* background-color: rgb(128, 39, 113); */
 }
 
 .box-container_4_2_2 {
     width: 50%;
     height: 380px;
     border-radius: 10px;
-    background-color: rgb(57, 207, 102);
+    /* background-color: rgb(57, 207, 102); */
 }
+
+/* Atur warna default untuk link */
+.box-container_4_2_2 a:link, 
+.box-container_4_2_2 a:visited {
+    color: #ffffff; /* Warna default link */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    transition: color 1.5s ease; /* Animasi transisi saat berubah warna */
+}
+
+/* Ubah warna saat di-hover */
+.box-container_4_2_2 a:hover {
+    color: #2fff00; /* Warna saat link di-hover */
+    text-decoration: underline; /* Opsional: menambahkan garis bawah saat di-hover */
+}
+
+/* Jika ingin mengubah warna saat link aktif diklik */
+.box-container_4_2_2 a:active {
+    color: #0056b3; /* Warna saat link aktif */
+}
+
 
 .box-container_4_3 {
     width: 28%;
     height: 380px;
     border-radius: 10px;
-    background-color: rgb(222, 163, 86);
+    /* background-color: rgb(222, 163, 86); */
     display: flex;    
     flex-direction: column;
 }
@@ -331,7 +459,7 @@ section{
 .box-container_4_3_1 {
     width: 100%;
     height: 120px;
-    background-color: silver;
+    /* background-color: silver; */
     border-radius: 10px;
 }
 
