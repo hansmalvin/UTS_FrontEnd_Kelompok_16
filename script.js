@@ -1,41 +1,10 @@
 const images = document.querySelectorAll('.box-container_1_2 img');
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
-let currentIndex = 0;
-let interval;
+let current = 0;
 
-function showImage(index) {
-    images.forEach((img, i) => {
-        img.classList.toggle('active', i === index);
-    });
+function changeImage() {
+    images[current].classList.remove('active');
+    current = (current + 1) % images.length;
+    images[current].classList.add('active');
 }
 
-function nextImage() {
-    currentIndex = (currentIndex + 1) % images.length;
-    showImage(currentIndex);
-}
-
-function prevImage() {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    showImage(currentIndex);
-}
-
-function startAutoSlide() {
-    interval = setInterval(nextImage, 3000); // Ganti otomatis setiap 3 detik
-}
-
-prevButton.addEventListener('click', () => {
-    prevImage();
-    clearInterval(interval);
-    startAutoSlide();
-});
-
-nextButton.addEventListener('click', () => {
-    nextImage();
-    clearInterval(interval);
-    startAutoSlide();
-});
-
-// Inisialisasi slider
-showImage(currentIndex);
-startAutoSlide();
+setInterval(changeImage, 4000); // Ganti gambar setiap 4 detik

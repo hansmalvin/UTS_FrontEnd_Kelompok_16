@@ -114,35 +114,19 @@ section{
 .box-container_1_2 {
     width: 505px;
     height: 680px;
-    background-image: url(/assets/Cloud.jpeg);
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
     position: relative;
-    background-repeat: no-repeat;
-    animation: change 12s infinite ease-in-out;
-    transition: background-image 2s ease-in-out;
+    overflow: hidden;
 }
-
-@keyframes change {
-    0% {
-        background-image: url(/assets/FairyTest.jpeg);
-    }
-    33% {
-        background-image: url(/assets/Cloud.jpeg);
-    }
-    66% {
-        background-image: url(/assets/TrainTest.jpeg);
-    }
-    100% {
-        background-image: url(/assets/FairyTest.jpeg);
-    }
-}
-
 
 .box-container_1_2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 1s ease-in-out;
 }
 
 .box-container_1_2 img.active {
@@ -150,124 +134,82 @@ section{
 }
 
 
-
-.box-container_1_2 button {
-    position: absolute;
-    bottom: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.prev {
-    left: 10px;
-}
-.next {
-    left: 60px;
-}
-
-
 .box-container_2 {
-    height: 200px;
+    height: 600px;
     /* background-color: bisque; */
-    padding: 10px;
     border-radius: 10px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.box-container_2 h1 {
-    -webkit-text-stroke: #2fff00;
-}
-
-.box-container_2_1, .box-container_2_2 {
-    width: 100%;
-    height: 60px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 20px;
-    left: 0;
-    overflow: hidden;
-}
-
-.box-container_2_1 {
-    background-color: rgb(152, 205, 77);
-    transform: rotate(-4deg);
-    z-index: 1;
-}
-
-.box-container_2_2 {
-    background-color: rgb(152, 205, 77);
-    transform: rotate(5deg);
-    z-index: 2;
-}
-
-.LeftToRight h1, .RightToLeft h1 {
-    white-space: nowrap;
+    flex-direction: column;
+    padding: 5%;
     
 }
 
-.LeftToRight {
-    animation: scroll-left-right 10s linear infinite;
+
+.box-container_2_1 {
+    width: 100%;
+    /* background-color: rgb(207, 135, 194); */
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    padding: 10px;
 }
 
-.RightToLeft {
-    animation: scroll-right-left 10s linear infinite;
+.box-container_2_1_1 {
+    width: 45%;
+    height: 100%;
+    border-radius: 10px;
+    /* background-color: #8a8a8a; */
+
 }
 
-/* Animasi teks dari kiri ke kanan */
-@keyframes scroll-left-right {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(100%);
-    }
+.box-container_2_1_1 img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 250px;
 }
 
-/* Animasi teks dari kanan ke kiri */
-@keyframes scroll-right-left {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+.box-container_2_1 h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2fff00;
+}
+
+.box-container_2_1 h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.box-container_2_1 h3 {
+    -webkit-text-stroke: 2px #2fff00;
+    font-size: 48px;
+    font-weight: bold;
+    color: transparent;
+    letter-spacing: normal;
+}
+
+.box-container_2_1 p {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 
-.moving-text {
-    position: absolute;
-    white-space: nowrap;
-    animation: moveText 10s linear infinite;
-    animation-delay: 0s; /* Awal tanpa delay */
-}
+.box-container_2_1_2 {
+    width: 55%;
+    height: 100%;
+    border-radius: 10px;
+    /* background-color: #b4875a; */
+} 
 
-.moving-text:nth-child(2) {
-    animation-delay: 3s; /* Teks kedua muncul setelah 3 detik */
-}
-
-.moving-text:nth-child(3) {
-    animation-delay: 6s; /* Teks ketiga muncul setelah 6 detik */
-}
-
-/* Anda bisa tambahkan lebih banyak elemen .moving-text dan delay jika diperlukan */
-
-@keyframes moveText {
-    0% {
-        left: 100%; /* Mulai dari luar kanan box-container */
-    }
-    100% {
-        left: -100%; /* Berhenti setelah teks keluar dari kiri box-container */
-    }
-}
-
+/* .box-container_2_2 {
+    width: 100%;
+    background-color: #e0e030;
+    height: 30%;
+    border-radius: 10px;
+} */
 
 .box-container_3 {
 
@@ -292,52 +234,61 @@ section{
     
 }
 
-.box-container_3_2{
+.box-container_3_2 {
     width: 60%;
-    height: 90px;
+    height: auto;
     border-radius: 10px;
-    /* background-color: rgb(156, 166, 194); */
     padding-top: 25px;
 }
 
-.box-container_3_2_1{
+.box-container_3_2_1 {
     text-align: center;
-    /* background-color: #fff; */
+    /* background-color: #8f3838; */
     border-radius: 10px;
+    padding: 10px;
+}
+
+/* Flex container for input and button */
+.email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adds space between input and button */
 }
 
 /* Input Email */
 .email-input {
     flex: 1;
-    width: 400px;
     padding: 15px;
     font-size: 16px;
-    /* border: 2px solid #fefffe; */
     border-radius: 5px;
-    margin-bottom: 20px;
     outline: none;
-    transition: border-color 0.3s ease;
+    transition: border-color 1.5s ease;
+    border: 3px solid transparent;
 }
 
-.email-input:focus {
+.email-input:hover {
     border-color: #2fff00;
 }
 
 /* Tombol Submit */
 .submit-btn {
-    /* background-color: #007bff; */
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     border: none;
     padding: 15px 30px;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 1.5s ease;
+    transition: color 1.5s ease;
 }
 
 .submit-btn:hover {
     background-color: #2fff00;
+    color: #ffffff;
 }
+
 
 
 .box-container_3 p{
@@ -390,7 +341,7 @@ section{
 
 .box-container_4 h4 {
     color: #2fff00;
-    font-size: 4em;
+    font-size: 3em;
     letter-spacing: normal;
     font-weight: bold;
 }
@@ -428,22 +379,22 @@ section{
 }
 
 /* Atur warna default untuk link */
-.box-container_4_2_2 a:link, 
-.box-container_4_2_2 a:visited {
+.box-container_4_2 a:link, 
+.box-container_4_2 a:visited {
     color: #ffffff; /* Warna default link */
     text-decoration: none; /* Menghilangkan garis bawah pada link */
     transition: color 1.5s ease; /* Animasi transisi saat berubah warna */
 }
 
 /* Ubah warna saat di-hover */
-.box-container_4_2_2 a:hover {
+.box-container_4_2 a:hover {
     color: #2fff00; /* Warna saat link di-hover */
     text-decoration: underline; /* Opsional: menambahkan garis bawah saat di-hover */
 }
 
 /* Jika ingin mengubah warna saat link aktif diklik */
-.box-container_4_2_2 a:active {
-    color: #0056b3; /* Warna saat link aktif */
+.box-container_4_2 a:active {
+    color: #2fff00; /* Warna saat link aktif */
 }
 
 
@@ -458,22 +409,22 @@ section{
 
 .box-container_4_3_1 {
     width: 100%;
-    height: 120px;
+    height: 80px;
     /* background-color: silver; */
     border-radius: 10px;
 }
 
 .box-container_4_3_2 {
     width: 100%;
-    height: 150px;
-    background-color: darkkhaki;
+    height: 220px;
+    /* background-color: darkkhaki; */
     border-radius: 10px;
 }
 
 .box-container_4_3_3 {
     width: 100%;
-    height: 110px;
-    background-color: rgb(85, 150, 138);
+    height: 90px;
+    /* background-color: rgb(85, 150, 138); */
     border-radius: 10px;
 }
 
