@@ -16,7 +16,7 @@ html{
 
 body {
     background: #0a0a0a;
-    color: #2fff00;
+    color: #ffffff;
 }
 
 .header{
@@ -33,13 +33,14 @@ body {
     /* opacity: .7; */
     justify-content: space-between;
     align-items: center;
-    background: red;
+    background: #563d3d;
+    /* border: 2px solid #2fff00; */
     /* z-index: 100; */
 }
 
 .logo{
-    font-size: 2.5rem;
-    color: yellow;
+    font-size: 4rem;
+    color: #80ad05; 
 }
 
 .header img{
@@ -49,13 +50,13 @@ body {
 nav a{
     position: relative;
     margin-left: 15px;
-    font-size: 1.7rem;
-    color: #fff;
+    font-size: 2rem;
+    color: #80ad05;
 }
 
 .sign-up{
-    font-size: 1.7rem;
-    color: #262626;
+    font-size: 2rem;
+    color: #80ad05;
 }
 
 section{
@@ -68,14 +69,404 @@ section{
 }
 .content span{
     font-size: 5rem;
-    -webkit-text-stroke: 2px blue;
-    color: transparent;
     letter-spacing: normal;
     font-weight: bold;
 }
 
 .content h1{
-    color: #2fff00;
-    font-size: 7rem;
+    -webkit-text-stroke: 2px #2fff00;
+    color: transparent;
+    letter-spacing: normal;
+    font-size: 8rem;
     font-weight: bold;
 }
+.content h2{
+    color: whitesmoke;
+    font-size: 6rem;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+.content h3 {
+    font-size: 130px;
+    -webkit-text-stroke: 2px #2fff00;
+    color: transparent;
+    letter-spacing: normal;
+}
+
+.content p{
+        font-size: 12px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    
+.box-container_1 {
+    height: 700px;
+    /* background-color: rgb(24, 40, 35); */
+    padding: 10px;
+    border-radius: 10px;
+    display: flex; 
+    gap: 10px; 
+}
+
+.box-container_1_1 {
+    width: 900px;
+    height: 680px;
+    /* background-color: rgb(23, 24, 25); */
+
+}
+
+.box-container_1_2 {
+    width: 505px;
+    height: 680px;
+    position: relative;
+    overflow: hidden;
+}
+
+.box-container_1_2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.box-container_1_2 img.active {
+    opacity: 1;
+}
+
+
+.box-container_2 {
+    height: 600px;
+    /* background-color: bisque; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    
+}
+
+
+.box-container_2_1 {
+    width: 100%;
+    /* background-color: rgb(207, 135, 194); */
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    padding: 10px;
+}
+
+.box-container_2_1_1 {
+    width: 45%;
+    height: 100%;
+    border-radius: 10px;
+    /* background-color: #8a8a8a; */
+
+}
+
+.box-container_2_1_1 {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container_2_1_1 img {
+    width: 97%;
+    height: 97%;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 1; /* Pastikan gambar ada di depan */
+}
+
+.animasi-profil {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid #2fff00;
+    border-bottom: .2rem solid #2fff00;
+    border-left: .2rem solid #44506b;
+    border-right: .2rem solid #44506b;
+    animation: spinningProf .8s linear infinite;
+}
+
+@keyframes spinningProf {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+.box-container_2_1 h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2fff00;
+}
+
+.box-container_2_1 h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.box-container_2_1 h3 {
+    -webkit-text-stroke: 2px #2fff00;
+    font-size: 48px;
+    font-weight: bold;
+    color: transparent;
+    letter-spacing: normal;
+}
+
+.box-container_2_1 p {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+.box-container_2_1_2 {
+    width: 55%;
+    height: 100%;
+    border-radius: 10px;
+    /* background-color: #b4875a; */
+} 
+
+/* .box-container_2_2 {
+    width: 100%;
+    background-color: #e0e030;
+    height: 30%;
+    border-radius: 10px;
+} */
+
+.box-container_3 {
+
+    height: 300px;
+    /* background-color: rgb(122, 39, 84); */
+    /* border-radius: 10px; */
+    display: flex;
+    gap: 15%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /* border: 2px solid #2fff00; */
+    /* box-shadow: 0 4px 8px #2fff00 */
+}
+
+.box-container_3_1{
+    width: 60%;
+    height: 90px;
+    border-radius: 10px;
+    /* background-color: rosybrown; */
+    
+}
+
+.box-container_3_2 {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    padding-top: 25px;
+}
+
+.box-container_3_2_1 {
+    text-align: center;
+    /* background-color: #8f3838; */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Flex container for input and button */
+.email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adds space between input and button */
+}
+
+/* Input Email */
+.email-input {
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 1.5s ease;
+    border: 3px solid transparent;
+}
+
+.email-input:hover {
+    border-color: #2fff00;
+}
+
+/* Tombol Submit */
+.submit-btn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 1.5s ease;
+    transition: color .5s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2fff00;
+    color: #ffffff;
+}
+
+
+
+.box-container_3 p{
+    color: whitesmoke;
+    font-size: 20px;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+.box-container_3 h1{
+    color: whitesmoke;
+    font-size: 28px;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+.box-container_4 {
+    height: 400px;
+    /* background-color: antiquewhite;  */
+    border-radius: 10px;
+    display: flex;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10%;
+    border: 2px solid #2fff00;
+    box-shadow: 0 4px 8px #2fff00
+}
+
+.box-container_4 h1 {
+    color: whitesmoke;
+    font-size: 25px;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+.box-container_4 h2 {
+    color: #2fff00;
+    font-size: 17px;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+.box-container_4 h3 {
+    color: whitesmoke;
+    font-size: 18px;
+    letter-spacing: normal;
+}
+
+.box-container_4 h4 {
+    color: #2fff00;
+    font-size: 3em;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+
+.box-container_4_1 {
+    width: 28%;
+    height: 380px;
+    border-radius: 10px;
+    /* background-color: rgb(222, 163, 86); */
+    
+}
+
+.box-container_4_2 {
+    width: 28%;
+    height: 380px;
+    border-radius: 10px;
+    /* background-color: rgb(222, 163, 86); */
+    display: flex;
+    
+}
+
+.box-container_4_2_1 {
+    width: 50%;
+    height: 380px;
+    border-radius: 10px;
+    /* background-color: rgb(128, 39, 113); */
+}
+
+.box-container_4_2_2 {
+    width: 50%;
+    height: 380px;
+    border-radius: 10px;
+    /* background-color: rgb(57, 207, 102); */
+}
+
+/* Atur warna default untuk link */
+.box-container_4_2 a:link, 
+.box-container_4_2 a:visited {
+    color: #ffffff; /* Warna default link */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    transition: color 1.5s ease; /* Animasi transisi saat berubah warna */
+}
+
+/* Ubah warna saat di-hover */
+.box-container_4_2 a:hover {
+    color: #2fff00; /* Warna saat link di-hover */
+    text-decoration: underline; /* Opsional: menambahkan garis bawah saat di-hover */
+}
+
+/* Jika ingin mengubah warna saat link aktif diklik */
+.box-container_4_2 a:active {
+    color: #2fff00; /* Warna saat link aktif */
+}
+
+
+.box-container_4_3 {
+    width: 28%;
+    height: 380px;
+    border-radius: 10px;
+    /* background-color: rgb(222, 163, 86); */
+    display: flex;    
+    flex-direction: column;
+}
+
+.box-container_4_3_1 {
+    width: 100%;
+    height: 80px;
+    /* background-color: silver; */
+    border-radius: 10px;
+}
+
+.box-container_4_3_2 {
+    width: 100%;
+    height: 220px;
+    /* background-color: darkkhaki; */
+    border-radius: 10px;
+}
+
+.box-container_4_3_3 {
+    width: 100%;
+    height: 90px;
+    /* background-color: rgb(85, 150, 138); */
+    border-radius: 10px;
+}
+
+
+
+
+
+
