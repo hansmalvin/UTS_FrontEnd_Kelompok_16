@@ -8,3 +8,4 @@ function changeImage() {
 }
 
 setInterval(changeImage, 4000); // Ganti gambar setiap 4 detik
+

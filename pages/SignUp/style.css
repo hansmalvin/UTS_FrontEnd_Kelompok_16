@@ -9,16 +9,14 @@
 
 body{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items:center;
     flex-direction: column;
     height: 100vh;
-    background: linear-gradient(135deg, #ff4081, #81d4fa);
+    background: linear-gradient(210deg, #ff4081, #81d4fa);
 }
 
 .Kotak-Tengah{
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 100vh;
     padding: 60px;    
@@ -29,14 +27,12 @@ body{
     background: white;
     padding: 40px;
     border-radius: 30px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
     width: 400px;
 }
 
 .signin span{
     font-size: 1rem;
-    justify-content: center;
-    align-items: center;
     position: relative;
     left: 138px;
     top: 10px;

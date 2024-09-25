@@ -43,10 +43,6 @@ body {
     color: #80ad05; 
 }
 
-.header img{
-
-}
-
 nav a{
     position: relative;
     margin-left: 15px;
@@ -64,9 +60,6 @@ section{
     padding: 10rem 9% 2rem;
 }
 
-.content{
-    
-}
 .content span{
     font-size: 5rem;
     letter-spacing: normal;
@@ -241,6 +234,10 @@ section{
     /* background-color: #b4875a; */
 } 
 
+.box-container_2_1_2 p{
+    font-size: 2rem;
+}
+
 /* .box-container_2_2 {
     width: 100%;
     background-color: #e0e030;
@@ -285,15 +282,13 @@ section{
     padding: 10px;
 }
 
-/* Flex container for input and button */
 .email-form {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px; /* Adds space between input and button */
+    gap: 10px;
 }
 
-/* Input Email */
 .email-input {
     flex: 1;
     padding: 15px;
@@ -465,8 +460,4 @@ section{
     border-radius: 10px;
 }
 
-
-
-
-
-
+/* belum responsive */
