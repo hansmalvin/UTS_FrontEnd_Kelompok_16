@@ -14,7 +14,7 @@ $(document).ready(function() {
           alert('Tolong Diisi');
         } else {
           alert('Anda Berhasil Masuk');
-          console.log("Selamat Datang", firstname);  
+          console.log("Selamat Datang", firstname);
         }
       });
     });
