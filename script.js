@@ -19,6 +19,7 @@ $(document).ready(function() {
 });
 
 
+
 const images = document.querySelectorAll('.box-container_1_2 img');
 let current = 0;
 
