@@ -31,3 +31,20 @@ function changeImage() {
 
 setInterval(changeImage, 4000); // Ganti gambar setiap 4 detik
 
+$(document).ready(function() {
+    // Efek bounce tambahan ketika di-hover
+    $('.content p').hover(function() {
+        $(this).css('transform', 'scale(1.1)');
+    }, function() {
+        $(this).css('transform', 'scale(1)');
+    });
+
+    // Efek ketika teks di-click
+    $('.content p').on('click', function() {
+        $(this).animate({
+            fontSize: '2rem'
+        }, 300).animate({
+            fontSize: '1rem'
+        }, 300);
+    });
+});
