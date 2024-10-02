@@ -356,7 +356,7 @@ h1 {
     height: 380px;
     border-radius: 10px;
     /* background-color: rgb(222, 163, 86); */
-    display: flex;
+    display: flex;    
     flex-direction: column;
 }
 
