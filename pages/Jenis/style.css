@@ -8,14 +8,14 @@
 
 html{
     font-size: 62.5%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
 body {
     background: #0d1b2a;
     color: #e5e5e5;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .header {
@@ -235,3 +235,204 @@ span::before{
 @media (max-width: 370px){
 
 }
+
+
+/* Footer */
+
+.box-container_4 {
+    height: 400px;
+    /* background-color: antiquewhite;  */
+    border-radius: 10px;
+    display: flex;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10%;
+    border: 2px solid #ff6b6b;
+    box-shadow: 0 4px 8px #ff6b6b
+}
+
+.box-container_4 h1 {
+    color: whitesmoke;
+    font-size: 25px;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+.box-container_4 h2 {
+    color: #ff6b6b;
+    font-size: 17px;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+.box-container_4 h3 {
+    color: whitesmoke;
+    font-size: 18px;
+    letter-spacing: normal;
+}
+
+.box-container_4 h4 {
+    color: #ff6b6b;
+    font-size: 3em;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+
+.box-container_4_1 {
+    width: 28%;
+    height: 380px;
+    border-radius: 10px;
+    /* background-color: rgb(222, 163, 86); */
+    
+}
+
+.box-container_4_2 {
+    width: 28%;
+    height: 380px;
+    border-radius: 10px;
+    /* background-color: rgb(222, 163, 86); */
+    display: flex;
+    
+}
+
+.box-container_4_2_1 {
+    width: 50%;
+    height: 380px;
+    border-radius: 10px;
+    /* background-color: rgb(128, 39, 113); */
+}
+
+.box-container_4_2_2 {
+    width: 50%;
+    height: 380px;
+    border-radius: 10px;
+    /* background-color: rgb(57, 207, 102); */
+}
+
+/* Atur warna default untuk link */
+.box-container_4_2 a:link, 
+.box-container_4_2 a:visited {
+    color: #ffffff; /* Warna default link */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    transition: color 1.5s ease; /* Animasi transisi saat berubah warna */
+}
+
+/* Ubah warna saat di-hover */
+.box-container_4_2 a:hover {
+    color: #ff6b6b; /* Warna saat link di-hover */
+    text-decoration: none; /* Opsional: menambahkan garis bawah saat di-hover */
+}
+
+/* Jika ingin mengubah warna saat link aktif diklik */
+.box-container_4_2 a:active {
+    color: #ff6b6b; /* Warna saat link aktif */
+}
+
+
+.box-container_4_3 {
+    width: 28%;
+    height: 380px;
+    border-radius: 10px;
+    /* background-color: rgb(222, 163, 86); */
+    display: flex;    
+    flex-direction: column;
+}
+
+.box-container_4_3_1 {
+    width: 100%;
+    height: 80px;
+    /* background-color: silver; */
+    border-radius: 10px;
+}
+
+.box-container_4_3_2 {
+    width: 100%;
+    height: 220px;
+    /* background-color: darkkhaki; */
+    border-radius: 10px;
+}
+
+.box-container_4_3_3 {
+    width: 100%;
+    height: 90px;
+    /* background-color: rgb(85, 150, 138); */
+    border-radius: 10px;
+}
+
+p {
+    font-family: "Helvetica Neue", "Oswald", Helvetica, Arial, sans-serif; /* Font yang Anda pilih */
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    transition: color 1s ease-in-out, transform 0.5s ease-in-out; /* Animasi yang diinginkan */
+    cursor: pointer;
+}
+
+
+p:hover {
+    color: #FF6B6B; /* Warna saat hover */
+    transform: scale(1.2); /* Efek zoom saat di-hover */
+}
+
+/* belum responsive */
+/* media */
+
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px){
+    .header{
+        padding: 2rem 4%;
+    }
+    .item1{
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 768px){
+    .header{
+        background: #0d1b2a;
+    }
+
+    #icon-utk-menu{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 1rem 4%;
+        background: #0d1b2a;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        transition: .25s ease;
+        transition-delay: .25s;
+    }
+
+    .navbar.active{
+        left: 0;
+        transition-delay: 0s;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+}
+
+@media (max-width: 520px){
+    html{
+        font-size: 50%;
+    }
+}
+
+/* Footer */
