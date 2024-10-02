@@ -59,7 +59,8 @@ body {
     animation-delay: .4s;
 }
 
-.navbar a {
+
+.navbar a { 
     font-size: 1.7rem;
     color: #FF6B6B;
     text-decoration: none;
