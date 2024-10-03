@@ -60,7 +60,7 @@ body {
     animation-delay: .4s;
 }
 
-.navbar a { 
+.navbar a {
     font-size: 1.7rem;
     color: #FF6B6B;
     text-decoration: none;
@@ -155,7 +155,7 @@ body {
 }
 
 
-.box-container_basic {  
+.box-container_basic {
     height: 2000px;
     border-radius: 10px;
     background-color: #FF6B6B;
@@ -313,7 +313,7 @@ h1 {
 }
 
 /* Atur warna default untuk link */
-.box-container_4_2 a:link, 
+.box-container_4_2 a:link,
 .box-container_4_2 a:visited {
     color: #ffffff; /* Warna default link */
     text-decoration: none; /* Menghilangkan garis bawah pada link */
@@ -337,7 +337,7 @@ h1 {
     height: 380px;
     border-radius: 10px;
     /* background-color: rgb(222, 163, 86); */
-    display: flex;    
+    display: flex;
     flex-direction: column;
 }
 
