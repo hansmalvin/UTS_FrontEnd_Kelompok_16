@@ -1,4 +1,4 @@
-/* <--  SLEBEW --> */
+/* <--  AWAL NAVBAR --> */
 * {
     margin: 0;
     padding: 0;
@@ -154,19 +154,19 @@ body {
 
 }
 
+.box-container_0{
+    /* background-color: #bf59ac; */
+    height: 9vh;
+}
+
+
+/* <--  AKHIR NAVBAR --> */
 
 .box-container_basic {  
     height: 2000px;
     border-radius: 10px;
     background-color: #FF6B6B;
 }
-.box-container_0{
-    /* background-color: #bf59ac; */
-    height: 9vh;
-}
-/* <--  SLEBEW --> */
-
-
 
 .box-container_0_0 {
     height: 350px;
@@ -421,7 +421,7 @@ h3 {
 /* TEKS */
 
 
-/* Footer */
+/* AKHIR FOOTER */
 
 .box-container_4 {
     height: 400px;
@@ -619,5 +619,5 @@ h3 {
     }
 }
 
-/* Footer */
+/* AKHIR FOOTER */
 
