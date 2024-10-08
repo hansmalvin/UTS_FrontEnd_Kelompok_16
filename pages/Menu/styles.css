@@ -12,6 +12,7 @@ html{
     /* overflow: hidden; */
 }
 
+
 body {
     background: #0d1b2a;
     color: #e5e5e5;
@@ -59,8 +60,7 @@ body {
     animation-delay: .4s;
 }
 
-
-.navbar a { 
+.navbar a {
     font-size: 1.7rem;
     color: #FF6B6B;
     text-decoration: none;
@@ -356,7 +356,7 @@ h1 {
     height: 380px;
     border-radius: 10px;
     /* background-color: rgb(222, 163, 86); */
-    display: flex;    
+    display: flex;
     flex-direction: column;
 }
 
