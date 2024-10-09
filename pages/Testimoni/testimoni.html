@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimoni</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="testimonial-container">
+        <h2>Beri Testimoni!</h2>
+        <form id="testimonialForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" placeholder="Masukan Nama Anda" required>
+
+            <label for="message">Testimoni:</label>
+            <textarea id="message" placeholder="Masukkan Testimoni Anda" required></textarea>
+
+            <button type="submit">Kirim</button>
+        </form>
+
+        <h3>Testimoni:</h3>
+        <div id="testimonialList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
