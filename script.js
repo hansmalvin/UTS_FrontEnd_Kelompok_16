@@ -11,24 +11,13 @@ $(document).ready(function() {
     });
 
     $(window).scroll(function() {
-        $('section').each(function() {
-            let top = $(window).scrollTop();
-            let offset = $(this).offset().top - 100;
-            let height = $(this).outerHeight();
-            let id = $(this).attr('id');
-            
-            if (top >= offset && top < offset + height) {
-                $('header nav a').removeClass('active');
-                $('header nav a[href*=' + id + ']').addClass('active');
-            }
-        });
-
         $('header').toggleClass('scroll', $(window).scrollTop() > 100);
 
         $('#icon-utk-menu').removeClass('bx-x');
         $('.navbar').removeClass('active');
     });
 });
+
 
 
 const images = document.querySelectorAll('.box-container_1_2 img');
@@ -42,3 +31,20 @@ function changeImage() {
 
 setInterval(changeImage, 4000); // Ganti gambar setiap 4 detik
 
+$(document).ready(function() {
+    // Efek bounce tambahan ketika di-hover
+    $('.content p').hover(function() {
+        $(this).css('transform', 'scale(1.1)');
+    }, function() {
+        $(this).css('transform', 'scale(1)');
+    });
+
+    // Efek ketika teks di-click
+    $('.content p').on('click', function() {
+        $(this).animate({
+            fontSize: '2rem'
+        }, 300).animate({
+            fontSize: '1rem'
+        }, 300);
+    });
+});

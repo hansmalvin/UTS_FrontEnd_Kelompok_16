@@ -15,9 +15,25 @@ html{
 }
 
 body {
-    background: #0a0a0a;
+    background: #0d1b2a;
     color: #ffffff;
 }
+
+p {
+    font-family: "Helvetica Neue", "Oswald", Helvetica, Arial, sans-serif; /* Font yang Anda pilih */
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    transition: color 1s ease-in-out, transform 0.5s ease-in-out; /* Animasi yang diinginkan */
+    cursor: pointer;
+}
+
+
+p:hover {
+    color: #FF6B6B; /* Warna saat hover */
+    transform: scale(1.2); /* Efek zoom saat di-hover */
+}
+
 
 .header {
     display: flex;
@@ -55,7 +71,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #0d1b2a;
+    background: #0a0a0a;
     animation: anime 1s ease forwards;
     animation-delay: .4s;
 }
@@ -98,13 +114,15 @@ section{
     font-weight: bold;
 }
 
+
 .content h1{
-    -webkit-text-stroke: 2px #2fff00;
+    -webkit-text-stroke: 2px #ff6b6b;
     color: transparent;
     letter-spacing: normal;
     font-size: 8rem;
     font-weight: bold;
 }
+
 .content h2{
     color: whitesmoke;
     font-size: 6rem;
@@ -114,16 +132,10 @@ section{
 
 .content h3 {
     font-size: 130px;
-    -webkit-text-stroke: 2px #2fff00;
+    -webkit-text-stroke: 2px #ff6b6b;
     color: transparent;
     letter-spacing: normal;
 }
-
-.content p{
-        font-size: 16px;
-        font-weight: bold;
-        color: #ffffff;
-    }
     
 
 .box-container_0{
@@ -132,8 +144,8 @@ section{
 }
 
 .box-container_1 {
-    height: 700px;
-    /* background-color: rgb(24, 40, 35); */
+    height: 890px;
+    /* background-color: rgb(24, 40, 35);   */
     padding: 10px;
     border-radius: 10px;
     display: flex; 
@@ -173,7 +185,7 @@ section{
 
 
 .box-container_2 {
-    height: 600px;
+    height: 800px;
     /* background-color: bisque; */
     border-radius: 10px;
     display: flex;
@@ -227,8 +239,8 @@ section{
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border-top: .2rem solid #2fff00;
-    border-bottom: .2rem solid #2fff00;
+    border-top: .2rem solid #ff6b6b;
+    border-bottom: .2rem solid #ff6b6b;
     border-left: .2rem solid #44506b;
     border-right: .2rem solid #44506b;
     animation: spinningProf .8s linear infinite;
@@ -244,7 +256,7 @@ section{
 .box-container_2_1 h1 {
     font-size: 3rem;
     font-weight: bold;
-    color: #2fff00;
+    color: #ff6b6b;
 }
 
 .box-container_2_1 h2 {
@@ -253,19 +265,12 @@ section{
 }
 
 .box-container_2_1 h3 {
-    -webkit-text-stroke: 2px #2fff00;
+    -webkit-text-stroke: 2px #ff6b6b;
     font-size: 48px;
     font-weight: bold;
     color: transparent;
     letter-spacing: normal;
 }
-
-.box-container_2_1 p {
-    font-size: 16px;
-    font-weight: bold;
-    color: #ffffff;
-}
-
 
 .box-container_2_1_2 {
     width: 55%;
@@ -274,16 +279,6 @@ section{
     /* background-color: #b4875a; */
 } 
 
-.box-container_2_1_2 p{
-    font-size: 2rem;
-}
-
-/* .box-container_2_2 {
-    width: 100%;
-    background-color: #e0e030;
-    height: 30%;
-    border-radius: 10px;
-} */
 
 .box-container_3 {
 
@@ -296,8 +291,8 @@ section{
     padding-right: 100px;
     padding-top: 100px;
     padding-bottom: 100px;
-    /* border: 2px solid #2fff00; */
-    /* box-shadow: 0 4px 8px #2fff00 */
+    /* border: 2px solid #ff6b6b; */
+    /* box-shadow: 0 4px 8px #ff6b6b */
 }
 
 .box-container_3_1{
@@ -340,7 +335,7 @@ section{
 }
 
 .email-input:hover {
-    border-color: #2fff00;
+    border-color: #ff6b6b;
 }
 
 /* Tombol Submit */
@@ -357,25 +352,20 @@ section{
 }
 
 .submit-btn:hover {
-    background-color: #2fff00;
+    background-color: #ff6b6b;
     color: #ffffff;
 }
 
 
 
-.box-container_3 p{
+.box-container_3 h1{
     color: whitesmoke;
-    font-size: 20px;
+    font-size: 40px;
     letter-spacing: normal;
     font-weight: bold;
 }
 
-.box-container_3 h1{
-    color: whitesmoke;
-    font-size: 28px;
-    letter-spacing: normal;
-    font-weight: bold;
-}
+/* Footer */
 
 .box-container_4 {
     height: 400px;
@@ -387,8 +377,8 @@ section{
     padding-top: 10px;
     padding-bottom: 10px;
     gap: 10%;
-    border: 2px solid #2fff00;
-    box-shadow: 0 4px 8px #2fff00
+    border: 2px solid #ff6b6b;
+    box-shadow: 0 4px 8px #ff6b6b
 }
 
 .box-container_4 h1 {
@@ -399,7 +389,7 @@ section{
 }
 
 .box-container_4 h2 {
-    color: #2fff00;
+    color: #ff6b6b;
     font-size: 17px;
     letter-spacing: normal;
     font-weight: bold;
@@ -412,7 +402,7 @@ section{
 }
 
 .box-container_4 h4 {
-    color: #2fff00;
+    color: #ff6b6b;
     font-size: 3em;
     letter-spacing: normal;
     font-weight: bold;
@@ -460,13 +450,13 @@ section{
 
 /* Ubah warna saat di-hover */
 .box-container_4_2 a:hover {
-    color: #2fff00; /* Warna saat link di-hover */
-    text-decoration: underline; /* Opsional: menambahkan garis bawah saat di-hover */
+    color: #ff6b6b; /* Warna saat link di-hover */
+    text-decoration: none; /* Opsional: menambahkan garis bawah saat di-hover */
 }
 
 /* Jika ingin mengubah warna saat link aktif diklik */
 .box-container_4_2 a:active {
-    color: #2fff00; /* Warna saat link aktif */
+    color: #ff6b6b; /* Warna saat link aktif */
 }
 
 
@@ -557,3 +547,5 @@ section{
         font-size: 50%;
     }
 }
+
+/* Footer */
