@@ -7,6 +7,7 @@ $(document).ready(function() {
     // buat alert dulu
     $('a[href="#error"]').click(function(event) {
         event.preventDefault();
+
         alert('Coming Soon !');
     });
 
