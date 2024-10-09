@@ -1,3 +1,4 @@
+/* <--  AWAL NAVBAR --> */
 * {
     margin: 0;
     padding: 0;
@@ -71,89 +72,6 @@ body {
 .navbar a:hover,
 .navbar a.active {
     color: #4ecdc4;
-}
-
-.testing{
-    display: grid;
-    grid-template-columns: repeat(7,205px);
-    grid-template-rows: repeat(4,200px);
-
-}
-
-.item1{
-    grid-area: 2/ 4/ 4/ -1;
-    margin-left: 13rem ;
-}
-
-.item1 p{
-    margin-left: 2.5rem;
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.item1 h3{
-    margin-left: 2.5rem;
-    font-size: 3rem;
-}
-
-.item1 span{
-    font-size: 4rem;
-    color: #ff6b6b;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.item1 li{
-    list-style-type: none;
-    margin-left: 2.5rem;
-    font-size: 2rem;
-    line-height: 1.2;
-    letter-spacing: .5px;
-}
-
-.item1 li:nth-child(4){
-    margin-top: 3px;
-}
-
-.item1 li span{
-    font-size: 2.5rem;
-}
-
-span{
-    color: #ff6b6b;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.item3{
-    grid-area: 2 / 1/ 4/ 4;
-}
-
-.item3 img{
-    width: 100%;
-    height: 100%;
-    margin-left: 13rem;
-    margin-top: .8rem;
-}
-
-.menu-latihan{
-    grid-area: 4/1/-1/-1;
-    margin-top: 3rem;
-    margin-left: 13.3rem;
-}
-
-span::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #0d1b2a;
-    animation: anime 1s ease forwards;
-    animation-delay: .9s;
-}
-
-.menu-latihan a{
-    font-size: 3rem;
 }
 
 /* burger */
@@ -236,8 +154,152 @@ span::before{
 
 }
 
+.box-container_0{
+    /* background-color: #bf59ac; */
+    height: 9vh;
+}
 
-/* Footer */
+/* <--  AKHIR NAVBAR --> */
+
+
+/* .box-container_1 {
+    background-color: #4ecdc4;
+    height: 1000px;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.box-container_1 h1 {
+    position: absolute;
+    color: white;
+    font-size: 8rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 11;
+    text-shadow: 4px 4px 0.1px rgba(0, 0, 0, 0.7);
+}
+
+.box-container_1_1 {
+    background-color: rgb(219, 206, 189);
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.box-container_1_1 img  {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+
+.box-container_1_1_1 {
+    background-color: violet;
+    height: 100%;
+    width: 50%;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+
+}
+ */
+
+ .box-container_1 {
+    position: relative;
+    height:500px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.box-container_1_1 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 10px;
+}
+
+.box-container_1_1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.box-container_1_1_1 {
+    height: 100%;
+    width: 50%;
+    /* background-color: rgba(205, 186, 78, 0.5);  */
+            /* Transparansi untuk teks di atas gambar */
+    z-index: 2;
+    border-radius: 10px;
+    padding: 100px;
+}
+
+.box-container_1_1_1 h1 {
+    color: #ff6b6b;
+    font-size: 6rem;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: 2px 2px 4px #000000;
+    z-index: 3;
+}
+.box-container_1_1_1 h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* AKHIR FOOTER */
 
 .box-container_4 {
     height: 400px;
@@ -362,7 +424,7 @@ span::before{
     border-radius: 10px;
 }
 
-p {
+.naik p {
     font-family: "Helvetica Neue", "Oswald", Helvetica, Arial, sans-serif; /* Font yang Anda pilih */
     font-size: 16px;
     font-weight: bold;
@@ -372,7 +434,7 @@ p {
 }
 
 
-p:hover {
+.naik p:hover {
     color: #FF6B6B; /* Warna saat hover */
     transform: scale(1.2); /* Efek zoom saat di-hover */
 }
@@ -435,4 +497,5 @@ p:hover {
     }
 }
 
-/* Footer */
+/* AKHIR FOOTER */
+
