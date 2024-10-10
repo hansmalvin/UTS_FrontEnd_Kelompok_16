@@ -253,7 +253,7 @@ h1 {
     height: 100%;
     background: #0d1b2a;
     animation: anime 2s ease forwards;
-    animation-delay: .9s;
+    animation-delay: .8s;
 }
   
 .accordion-container, .accordionte {
@@ -267,7 +267,8 @@ h1 {
 }
 
 .accordion-btn {
-    width: 100%;
+
+    width: 100%; /* Ensure buttons take full width of the container */
     padding: 0.6rem;
     text-align: left;
     background-color: #FF6B6B;
@@ -307,6 +308,7 @@ h1 {
 }
 
 /* animasi kayak mark as done */
+  
 .mark-done {
     margin-top: 1rem;
     padding: 0.4rem 1rem;
@@ -525,7 +527,7 @@ h1 {
         top: 0;
         right: 0;
         width: 100vw;
-        height: 200%;
+        height: 210%;
         background: #0d1b2a;
         animation: anime 1s ease forwards;
         animation-delay: .9s;
