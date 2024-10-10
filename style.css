@@ -31,7 +31,7 @@ p {
 
 p:hover {
     color: #FF6B6B; /* Warna saat hover */
-    transform: scale(1.2); /* Efek zoom saat di-hover */
+    transform: scale(1.009); /* Efek zoom saat di-hover */
 }
 
 
@@ -498,7 +498,6 @@ section{
         font-size: 55%;
     }
 }
-
 @media (max-width: 991px){
     .header{
         padding: 2rem 4%;
@@ -549,3 +548,161 @@ section{
 }
 
 /* Footer */
+
+
+@media only screen and (min-width: 320px){
+    /* Awal Footer */
+    .box-container_4 {
+       display: flex;
+       flex-direction: column;
+       height: auto;
+       justify-content: center;
+   }
+
+   .box-container_4_2 {
+       position: relative;
+       width: 100%;
+       height: auto;
+   }
+   .box-container_4_1 {
+       position: relative;
+       width: 100%;
+       height: auto;
+   }
+   .box-container_4_2_1 {
+       width: 100%;
+       height: auto;
+   }
+   .box-container_4_2_2 {
+       width: 100%;
+       height: auto;
+   }
+   .box-container_4_3 {
+       width: 100%;
+   }
+   .box-container_4_3_2 {
+       width: 100%;
+   }
+   /* Akhir Footer */
+   
+}
+
+
+@media only screen and (min-width: 600px){
+
+    /* Awal Footer */
+    .box-container_4 {
+       display: flex;
+       flex-direction: column;
+       height: auto;
+       justify-content: center;
+   }
+
+   .box-container_4 h1 {
+       font-size: 40px;
+   }
+
+   .box-container_4 h2 {
+       font-size: 35px;
+   }
+
+   .box-container_4 h3 {
+       font-size: 30px;
+   }
+
+   .box-container_4 p {
+       font-size: 22px;
+   }
+
+   .box-container_4_2 {
+       position: relative;
+       width: 100%;
+       height: auto;
+   }
+   .box-container_4_1 {
+       position: relative;
+       width: 100%;
+       height: auto;
+   }
+   .box-container_4_2_1 {
+       width: 100%;
+       height: auto;
+   }
+   .box-container_4_2_2 {
+       width: 100%;
+       height: auto;
+   }
+   .box-container_4_3 {
+       width: 100%;
+   }
+   .box-container_4_3_2 {
+       width: 100%;
+   }
+   /* Akhir Footer */
+   
+}
+
+
+
+@media only screen and (min-width: 1200px){
+
+    /* Awal Footer */
+    .box-container_4 {
+       display: flex;
+       flex-direction: row;
+       height: auto;
+       justify-content: center;
+   }
+
+   .box-container_4 h1 {
+       font-size: 35px;
+   }
+
+   .box-container_4 h2 {
+       font-size: 30px;
+   }
+
+   .box-container_4 h3 {
+       font-size: 25px;
+   }
+
+   .box-container_4 p {
+       font-size: 22px;
+   }
+
+   .box-container_4_1 {
+       position: relative;
+       width: 33.33%;
+       height: auto;
+   }
+   .box-container_4_2 {
+       position: relative;
+       width: 33.33%;
+       height: auto;
+   }
+   .box-container_4_2_1 {
+       width: 100%;
+       height: auto;
+   }
+   .box-container_4_2_2 {
+       width: 100%;
+       height: auto;
+   }
+   .box-container_4_3 {
+       height: auto;
+       width: 33.33%;
+   }
+   .box-container_4_3_2 {
+       width: 100%;
+       height: auto;
+   }
+   .box-container_4_3_3 {
+       margin-top: 2rem;
+       width: 100%;
+       height: auto;
+   }
+   /* Akhir Footer */
+   
+}
+
+

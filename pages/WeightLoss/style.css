@@ -1,4 +1,3 @@
-/* <--  AWAL NAVBAR --> */
 * {
     margin: 0;
     padding: 0;
@@ -60,7 +59,7 @@ body {
     animation-delay: .4s;
 }
 
-.navbar a { 
+.navbar a {
     font-size: 1.7rem;
     color: #FF6B6B;
     text-decoration: none;
@@ -154,20 +153,81 @@ body {
 
 }
 
+
+.box-container_basic {
+    height: 2000px;
+    border-radius: 10px;
+    background-color: #FF6B6B;
+}
 .box-container_0{
     /* background-color: #bf59ac; */
     height: 9vh;
 }
 
+
+
 /* <--  AKHIR NAVBAR --> */
 
-
-/* .box-container_1 {
-    background-color: #4ecdc4;
-    height: 1000px;
+.box-container_basic {
+    height: 2000px;
     border-radius: 10px;
-    gap: 10px;
-    padding: 10px;
+    background-color: #FF6B6B;
+}
+
+.box-container_0_0 {
+    height: 350px;
+    border-radius: 10px;
+    display: flex; /* Menggunakan flexbox */
+    justify-content: center; /* Memposisikan secara horizontal */
+    align-items: center;
+    /* background-color: #816bff; */
+}
+
+.box-container_0_1 {
+    height: 100%;
+    width: 70%;
+    border-radius: 10px;
+    padding: 40px 50px;
+    /* box-shadow: 0 2px 4px #ff6b6b; */
+    transition: transform 0.3 ease, transform 0.3 ease;
+}
+
+
+.box-container_0_1 h2 {
+    font-size: 20px;
+    text-align: Left;
+}
+
+.box-container_0_1 li {
+    font-size: 20px;
+    text-align: Left;
+    font-weight: bold;
+}
+
+.box-container_0_1:hover {
+    transform: translateY(-15px);
+    /* border: 2px solid #ff6b6b; */
+    box-shadow: 3px 6px 10px #708373;
+}
+
+
+
+.box-container_1 {
+    position: relative;
+    height: 600px;
+    border-radius: 10px;
+    /* background-color: #4ecdc4; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container_1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 10;
+    /* border-radius: 10px; */
 }
 
 .box-container_1 h1 {
@@ -180,124 +240,101 @@ body {
     text-shadow: 4px 4px 0.1px rgba(0, 0, 0, 0.7);
 }
 
-.box-container_1_1 {
-    background-color: rgb(219, 206, 189);
-    height: 100%;
-    width: 100%;
+.box-container_2 {
+    height: 400px;
+    /* background-color: #4ecdc4; */
     border-radius: 10px;
+    gap: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
+    
 }
 
-.box-container_1_1 img  {
-    width: 100%;
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h2 {
+    font-size: 16px;
+    /* font-weight: bold; */
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+
+
+.box-container_2_1 {
     height: 100%;
+    width: 40%;
+    background-color: cornflowerblue;
     border-radius: 10px;
-    object-fit: cover;
-
-}
-
-.box-container_1_1_1 {
-    background-color: violet;
-    height: 100%;
-    width: 50%;
-    border-radius: 10px;
-    gap: 10px;
-    padding: 10px;
-    position: relative;
-
-}
- */
-
- .box-container_1 {
-    position: relative;
-    height:500px;
-    width: 100%;
-    border-radius: 10px;
-    display: flex;
-    padding: 10px;
-    gap: 10px;
     overflow: hidden;
-}
+} 
 
-.box-container_1_1 {
-    position: relative;
+.box-container_2_1 img {
     height: 100%;
     width: 100%;
     border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    gap: 10px;
-}
-
-.box-container_1_1 img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    transition: all 0.9s ease-in-out;
+}
+
+.box-container_2_1:hover {
+    transform: translateY(-15px);
+    /* border: 2px solid #ff6b6b; */
+    box-shadow: 3px 6px 10px #708373;
+}
+
+.box-container_2_1:hover img {
+    filter: blur(5px); /* Tambahkan efek blur */
+    mask-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Gradual blur dari bawah ke atas */
+    transform: scale(1.05); /* Opsional: Perbesar sedikit gambar saat di-hover */
     z-index: 1;
 }
 
-.box-container_1_1_1 {
-    height: 100%;
-    width: 50%;
-    /* background-color: rgba(205, 186, 78, 0.5);  */
-            /* Transparansi untuk teks di atas gambar */
-    z-index: 2;
-    border-radius: 10px;
-    padding: 100px;
-}
-
-.box-container_1_1_1 h1 {
-    color: #ff6b6b;
-    font-size: 6rem;
-    font-weight: bold;
-    text-align: left;
-    text-shadow: 2px 2px 4px #000000;
-    z-index: 3;
-}
-.box-container_1_1_1 h2 {
+/* Styling untuk teks overlay */
+.box-container_2_1 .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 2rem;
+    font-size: 20px;
     font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
     text-align: left;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-    z-index: 3;
+    z-index: 2;
+}
+
+.box-container_2_1:hover .text-overlay {
+    opacity: 1;
+}
+
+.box-container_2_2 {
+    height: 100%;
+    width: 60%;
+    /* background-color: blueviolet; */
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 2px 4px #a56b6b;
+    transition: transform 0.3 ease , transform 0.3 ease;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.box-container_2_2:hover {
+    transform: translateY(-15px);
+    /* border: 2px solid #ff6b6b; */
+    box-shadow: 3px 6px 10px #364e4f;
+}
 
 /* AKHIR FOOTER */
 
@@ -497,5 +534,340 @@ body {
     }
 }
 
-/* AKHIR FOOTER */
+/* media */
+
+@media only screen and (min-width: 320px){
+
+    h1 {
+        font-size: 20px;
+    }
+    
+    h2 {
+        font-size: 14px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+
+
+    .box-container_1 h1 {
+        font-size: 40px;
+    }
+
+     .box-container_0_0 {
+        width: 100%;
+        height: auto;
+     }
+     .box-container_0_1 {
+        width: 90%;
+        height: auto;
+     }
+
+     .box-container_0_1 h1 {
+        font-size: 20px;
+        height: auto;
+     }
+     .box-container_0_1 h2, .box-container_0_1 li{
+        font-size: 15px;
+     }
+     .box-container_0_1 h3 {
+        font-size: 17px;
+     }
+
+     .box-container_2 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+     }
+
+     .box-container_2_1 {
+        height: 30%;
+        width: 100%;
+        /* position: relative; */
+     }
+     .box-container_2_2 {
+        height: 70%;
+        width: 100%;
+        position: relative;
+     }
+    
+     .box-container_2_1 .text-overlay {
+        font-size: 15px;
+     }
+
+     /* Awal Footer */
+     .box-container_4 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+    }
+
+    .box-container_4_2 {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .box-container_4_1 {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .box-container_4_2_1 {
+        width: 100%;
+        height: auto;
+    }
+    .box-container_4_2_2 {
+        width: 100%;
+        height: auto;
+    }
+    .box-container_4_3 {
+        width: 100%;
+    }
+    .box-container_4_3_2 {
+        width: 100%;
+    }
+    /* Akhir Footer */
+    
+}
+
+
+@media only screen and (min-width: 600px){
+
+    h1 {
+        font-size: 45px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+
+
+    .box-container_1 h1 {
+        font-size: 70px;
+    }
+
+     .box-container_0_0 {
+        width: 100%;
+        height: auto;
+     }
+
+     .box-container_0_1 h1 {
+        font-size: 45px;
+        height: auto;
+     }
+     .box-container_0_1 h2, .box-container_0_1 li{
+        font-size: 25px;
+     }
+     .box-container_0_1 h3 {
+        font-size: 30px;
+     }
+
+     .box-container_2 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+     }
+
+     .box-container_2_1 {
+        height: 30%;
+        width: 100%;
+        position: relative;
+     }
+     .box-container_2_2 {
+        height: 70%;
+        width: 100%;
+        /* position: relative; */
+     }
+    
+     .box-container_2_1 .text-overlay {
+        font-size: 30px;
+     }
+
+     .box-container_3 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+     }
+
+     /* Awal Footer */
+     .box-container_4 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+    }
+
+    .box-container_4 h1 {
+        font-size: 40px;
+    }
+
+    .box-container_4 h2 {
+        font-size: 35px;
+    }
+
+    .box-container_4 h3 {
+        font-size: 30px;
+    }
+
+    .box-container_4 p {
+        font-size: 22px;
+    }
+
+    .box-container_4_2 {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .box-container_4_1 {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .box-container_4_2_1 {
+        width: 100%;
+        height: auto;
+    }
+    .box-container_4_2_2 {
+        width: 100%;
+        height: auto;
+    }
+    .box-container_4_3 {
+        width: 100%;
+    }
+    .box-container_4_3_2 {
+        width: 100%;
+    }
+    /* Akhir Footer */
+    
+}
+
+
+
+@media only screen and (min-width: 1200px){
+
+    h1 {
+        font-size: 45px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+
+
+    .box-container_1 h1 {
+        font-size: 70px;
+    }
+
+     .box-container_0_0 {
+        width: 100%;
+        height: auto;
+     }
+
+     .box-container_0_1 h1 {
+        font-size: 45px;
+        height: auto;
+     }
+     .box-container_0_1 h2, .box-container_0_1 li{
+        font-size: 25px;
+     }
+     .box-container_0_1 h3 {
+        font-size: 30px;
+     }
+
+     .box-container_2 {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+     }
+
+     .box-container_2_1 {
+        height: auto;
+        width: 40%;
+        position: relative;
+     }
+     .box-container_2_1 img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+     }
+
+     .box-container_2_2 {
+        height: auto;
+        width: 60%;
+        /* position: relative; */
+     }
+    
+     .box-container_2_1 .text-overlay {
+        font-size: 25px;
+     }
+
+     /* Awal Footer */
+     .box-container_4 {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: center;
+    }
+
+    .box-container_4 h1 {
+        font-size: 35px;
+    }
+
+    .box-container_4 h2 {
+        font-size: 30px;
+    }
+
+    .box-container_4 h3 {
+        font-size: 25px;
+    }
+
+    .box-container_4 p {
+        font-size: 22px;
+    }
+
+    .box-container_4_1 {
+        position: relative;
+        width: 33.33%;
+        height: auto;
+    }
+    .box-container_4_2 {
+        position: relative;
+        width: 33.33%;
+        height: auto;
+    }
+    .box-container_4_2_1 {
+        width: 100%;
+        height: auto;
+    }
+    .box-container_4_2_2 {
+        width: 100%;
+        height: auto;
+    }
+    .box-container_4_3 {
+        height: auto;
+        width: 33.33%;
+    }
+    .box-container_4_3_2 {
+        width: 100%;
+        height: auto;
+    }
+    .box-container_4_3_3 {
+        margin-top: 2rem;
+        width: 100%;
+        height: auto;
+    }
+    /* Akhir Footer */
+    
+}
+
+
+
+
 
