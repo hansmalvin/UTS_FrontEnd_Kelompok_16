@@ -1,4 +1,3 @@
-/* <--  SLEBEW --> */
 * {
     margin: 0;
     padding: 0;
@@ -9,14 +8,13 @@
 
 html{
     font-size: 62.5%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
 body {
     background: #0d1b2a;
     color: #e5e5e5;
-    overflow: hidden;
     margin: 0;
     padding: 0;
     display: flex;
@@ -151,22 +149,6 @@ body {
         font-size: 50%;
     }
 }
-
-@media (max-width: 462px){
-
-}
-
-@media (max-width: 370px){
-
-}
-
-.box-container_0{
-    /* background-color: #bf59ac; */
-    height: 9vh;
-}
-
-/* <--  SLEBEW --> */
-
 
 .pesan-container {
     background-color: #fff;

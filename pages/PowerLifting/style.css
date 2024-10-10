@@ -295,9 +295,9 @@ h3 {
 }
 
 .box-container_2_1:hover img {
-    filter: blur(5px); /* Tambahkan efek blur */
-    mask-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Gradual blur dari bawah ke atas */
-    transform: scale(1.05); /* Opsional: Perbesar sedikit gambar saat di-hover */
+    filter: blur(5px);
+    mask-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    transform: scale(1.05);
     z-index: 1;
 }
 
@@ -402,9 +402,9 @@ h3 {
 }
 
 .box-container_3_1_1:hover img {
-    filter: blur(5px); /* Tambahkan efek blur */
-    mask-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Gradual blur dari bawah ke atas */
-    transform: scale(1.2); /* Opsional: Perbesar sedikit gambar saat di-hover */
+    filter: blur(5px);
+    mask-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    transform: scale(1.2);
     z-index: 1;
 }
 
@@ -476,15 +476,12 @@ h3 {
     width: 28%;
     height: 380px;
     border-radius: 10px;
-    /* background-color: rgb(222, 163, 86); */
-    
 }
 
 .box-container_4_2 {
     width: 28%;
     height: 380px;
     border-radius: 10px;
-    /* background-color: rgb(222, 163, 86); */
     display: flex;
     
 }
@@ -493,33 +490,30 @@ h3 {
     width: 50%;
     height: 380px;
     border-radius: 10px;
-    /* background-color: rgb(128, 39, 113); */
 }
 
 .box-container_4_2_2 {
     width: 50%;
     height: 380px;
     border-radius: 10px;
-    /* background-color: rgb(57, 207, 102); */
 }
 
-/* Atur warna default untuk link */
+
 .box-container_4_2 a:link, 
 .box-container_4_2 a:visited {
-    color: #ffffff; /* Warna default link */
-    text-decoration: none; /* Menghilangkan garis bawah pada link */
-    transition: color 1.5s ease; /* Animasi transisi saat berubah warna */
+    color: #ffffff;
+    text-decoration: none;
+    transition: color .3s ease; 
 }
 
-/* Ubah warna saat di-hover */
+
 .box-container_4_2 a:hover {
-    color: #ff6b6b; /* Warna saat link di-hover */
-    text-decoration: none; /* Opsional: menambahkan garis bawah saat di-hover */
+    color: #ff6b6b;
+    text-decoration: none;
 }
 
-/* Jika ingin mengubah warna saat link aktif diklik */
 .box-container_4_2 a:active {
-    color: #ff6b6b; /* Warna saat link aktif */
+    color: #ff6b6b;
 }
 
 
@@ -527,7 +521,6 @@ h3 {
     width: 28%;
     height: 380px;
     border-radius: 10px;
-    /* background-color: rgb(222, 163, 86); */
     display: flex;    
     flex-direction: column;
 }
@@ -535,37 +528,32 @@ h3 {
 .box-container_4_3_1 {
     width: 100%;
     height: 80px;
-    /* background-color: silver; */
     border-radius: 10px;
 }
 
 .box-container_4_3_2 {
     width: 100%;
     height: 220px;
-    /* background-color: darkkhaki; */
     border-radius: 10px;
 }
 
 .box-container_4_3_3 {
     width: 100%;
     height: 90px;
-    /* background-color: rgb(85, 150, 138); */
     border-radius: 10px;
 }
 
 .naik p {
-    font-family: "Helvetica Neue", "Oswald", Helvetica, Arial, sans-serif; /* Font yang Anda pilih */
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 600;
     color: #ffffff;
-    transition: color 1s ease-in-out, transform 0.5s ease-in-out; /* Animasi yang diinginkan */
+    transition: transform 0.5s ease-in-out;
     cursor: pointer;
 }
 
 
 .naik p:hover {
-    color: #FF6B6B; /* Warna saat hover */
-    transform: scale(1.2); /* Efek zoom saat di-hover */
+    transform: scale(1.05); 
 }
 
 /* belum responsive */
