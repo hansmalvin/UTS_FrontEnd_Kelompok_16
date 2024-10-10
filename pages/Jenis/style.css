@@ -17,6 +17,8 @@ body {
     color: #e5e5e5;
 }
 
+/* navbar, header */
+
 .header {
     display: flex;
     position: fixed;
@@ -71,18 +73,17 @@ body {
 .navbar a.active {
     color: #4ecdc4;
 }
+/* ======================== */
 
-/* burger */
+/* burger icon */
 #icon-utk-menu{
     font-size: 3.5rem;
     color: #e5e5e5;
     cursor: pointer;
     display: none;
 }
-/* burger */
 
 /* bikin moving type character */
-
 .container{
     grid-area: 1/1/5/5;
     margin-top: 13rem;
@@ -124,7 +125,7 @@ body {
 /* end moving character */
 
 
-/* bagian isian 1 */
+/* isi section */
 
 .testing{
     display: grid;
@@ -199,6 +200,7 @@ span::before{
     animation-delay: .9s;
 }
 
+/* animasi gambar */
 
 .movingPic {
     padding: 2rem 0;
@@ -229,14 +231,14 @@ span::before{
     border-radius: 2rem;
 }
 
-
+/* slide animasi */
 @keyframes anime{
     100% {
         width: 0;
     }
 }
 
-/* media */
+/* media query responsif */
 
 @media (max-width: 1200px){
     html{
@@ -285,6 +287,7 @@ span::before{
     .header{
         padding: 2rem 4%;
     }
+
     .testing{
         display: grid;
         grid-template-columns: repeat(5,190px);
@@ -361,8 +364,6 @@ span::before{
         font-size: 2rem;
         margin: 3rem 0;
     }
-
-    /* bagian utama */
 
     .testing{
         display: grid;
@@ -469,9 +470,6 @@ span::before{
         font-size: 2rem;
         margin: 3rem 0;
     }
-
-
-    /* bagian utama */
 
     .testing{
         display: grid;
@@ -585,9 +583,6 @@ span::before{
         margin: 3rem 0;
     }
 
-
-    /* bagian utama */
-
     .testing{
         display: grid;
         grid-template-columns: repeat(4,115px);
@@ -694,9 +689,6 @@ span::before{
         font-size: 2rem;
         margin: 3rem 0;
     }
-
-
-    /* bagian utama */
 
     .testing{
         display: grid;
