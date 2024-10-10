@@ -125,7 +125,6 @@ body {
 
 
 /* isi section */
-
 .testing{
     display: grid;
     grid-template-columns: repeat(7,205px);
