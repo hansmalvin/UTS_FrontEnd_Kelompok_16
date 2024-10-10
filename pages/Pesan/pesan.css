@@ -1,4 +1,4 @@
-/* <--  SLEBEW --> */
+/* <--  AWAL NAVBAR --> */
 * {
     margin: 0;
     padding: 0;
@@ -9,20 +9,20 @@
 
 html{
     font-size: 62.5%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
 body {
     background: #0d1b2a;
     color: #e5e5e5;
-    overflow: hidden;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    /* overflow: hidden; */
 }
 
 .header {
@@ -164,8 +164,9 @@ body {
     /* background-color: #bf59ac; */
     height: 9vh;
 }
+    /* Akhir Navbar */
 
-/* <--  SLEBEW --> */
+
 
 
 .pesan-container {
@@ -176,6 +177,8 @@ body {
     text-align: center;
     width: 100%;
     max-width: 400px;
+    margin: 10rem auto 2rem; /* Adjusted to create space from header and footer */
+    flex-grow: 1; /* Allows content to grow and push footer down */
 }
 
 .pesan-form {
@@ -206,8 +209,538 @@ body {
     background-color: #218838;
 }
 
-#response-message {
-    margin-top: 20px;
+
+
+
+
+    /* Awal Footer */
+
+.box-container_4 {
+    height: 400px;
+    /* background-color: antiquewhite;  */
+    border-radius: 10px;
+    display: flex;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10%;
+    border: 2px solid #ff6b6b;
+    box-shadow: 0 4px 8px #ff6b6b
+}
+
+.box-container_4 h1 {
+    color: whitesmoke;
+    font-size: 25px;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+.box-container_4 h2 {
+    color: #ff6b6b;
+    font-size: 25px;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+.box-container_4 h3 {
+    color: whitesmoke;
     font-size: 18px;
-    color: #28a745;
+    letter-spacing: normal;
+}
+
+.box-container_4 h4 {
+    color: #ff6b6b;
+    font-size: 3em;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+
+.box-container_4_1 {
+    width: 28%;
+    height: 200px;
+    border-radius: 10px;
+    /* background-color: rgb(222, 163, 86); */
+    
+}
+
+.box-container_4_2 {
+    width: 28%;
+    height: 380px;
+    border-radius: 10px;
+    /* background-color: rgb(222, 163, 86); */
+    display: flex;
+    
+}
+
+.box-container_4_2_1 {
+    width: 50%;
+    height: 200px;
+    border-radius: 10px;
+    /* background-color: rgb(128, 39, 113); */
+}
+
+.box-container_4_2_2 {
+    width: 50%;
+    height: 200px;
+    border-radius: 10px;
+    /* background-color: rgb(57, 207, 102); */
+}
+
+/* Atur warna default untuk link */
+.box-container_4_2 a:link, 
+.box-container_4_2 a:visited {
+    color: #ffffff; /* Warna default link */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    transition: color 1.5s ease; /* Animasi transisi saat berubah warna */
+}
+
+/* Ubah warna saat di-hover */
+.box-container_4_2 a:hover {
+    color: #ff6b6b; /* Warna saat link di-hover */
+    text-decoration: none; /* Opsional: menambahkan garis bawah saat di-hover */
+}
+
+/* Jika ingin mengubah warna saat link aktif diklik */
+.box-container_4_2 a:active {
+    color: #ff6b6b; /* Warna saat link aktif */
+}
+
+
+.box-container_4_3 {
+    width: 28%;
+    height: 380px;
+    border-radius: 10px;
+    /* background-color: rgb(222, 163, 86); */
+    display: flex;    
+    flex-direction: column;
+}
+
+.box-container_4_3_1 {
+    width: 100%;
+    height: 80px;
+    /* background-color: silver; */
+    border-radius: 10px;
+}
+
+.box-container_4_3_2 {
+    width: 100%;
+    height: 220px;
+    /* background-color: darkkhaki; */
+    border-radius: 10px;
+}
+
+.box-container_4_3_3 {
+    width: 100%;
+    height: 90px;
+    /* background-color: rgb(85, 150, 138); */
+    border-radius: 10px;
+}
+
+.naik p {
+    font-family: "Helvetica Neue", "Oswald", Helvetica, Arial, sans-serif; /* Font yang Anda pilih */
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    transition: color 1s ease-in-out, transform 0.5s ease-in-out; /* Animasi yang diinginkan */
+    cursor: pointer;
+}
+
+
+.naik p:hover {
+    color: #FF6B6B; /* Warna saat hover */
+    transform: scale(1.009); /* Efek zoom saat di-hover */
+}
+
+/* belum responsive */
+/* media */
+
+@media only screen and (min-width: 320px){
+
+    h1 {
+        font-size: 20px;
+    }
+    
+    h2 {
+        font-size: 14px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+
+
+    .box-container_1 h1 {
+        font-size: 40px;
+    }
+
+     .box-container_0_0 {
+        width: 100%;
+        height: auto;
+     }
+     .box-container_0_1 {
+        width: 90%;
+        height: auto;
+     }
+
+     .box-container_0_1 h1 {
+        font-size: 20px;
+        height: auto;
+     }
+     .box-container_0_1 h2, .box-container_0_1 li{
+        font-size: 15px;
+     }
+     .box-container_0_1 h3 {
+        font-size: 17px;
+     }
+
+     .box-container_2 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+     }
+
+     .box-container_2_1 {
+        height: 30%;
+        width: 100%;
+        /* position: relative; */
+     }
+     .box-container_2_2 {
+        height: 70%;
+        width: 100%;
+        position: relative;
+     }
+    
+     .box-container_2_1 .text-overlay {
+        font-size: 15px;
+     }
+
+     .box-container_3 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+     }
+
+     .box-container_3_1 {
+        width: 100%;
+        position: relative;
+     }
+     .box-container_3_1_1 {
+        position: relative;
+        
+     }
+
+     /* Awal Footer */
+     .box-container_4 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+    }
+
+    .box-container_4_2 {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .box-container_4_1 {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .box-container_4_2_1 {
+        width: 100%;
+        height: auto;
+    }
+    .box-container_4_2_2 {
+        width: 100%;
+        height: auto;
+    }
+    .box-container_4_3 {
+        width: 100%;
+    }
+    .box-container_4_3_2 {
+        width: 100%;
+    }
+    /* Akhir Footer */
+    
+}
+
+
+@media only screen and (min-width: 600px){
+
+    h1 {
+        font-size: 45px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+
+
+    .box-container_1 h1 {
+        font-size: 70px;
+    }
+
+     .box-container_0_0 {
+        width: 100%;
+        height: auto;
+     }
+
+     .box-container_0_1 h1 {
+        font-size: 45px;
+        height: auto;
+     }
+     .box-container_0_1 h2, .box-container_0_1 li{
+        font-size: 25px;
+     }
+     .box-container_0_1 h3 {
+        font-size: 30px;
+     }
+
+     .box-container_2 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+     }
+
+     .box-container_2_1 {
+        height: 30%;
+        width: 100%;
+        position: relative;
+     }
+     .box-container_2_2 {
+        height: 70%;
+        width: 100%;
+        /* position: relative; */
+     }
+    
+     .box-container_2_1 .text-overlay {
+        font-size: 30px;
+     }
+
+     .box-container_3 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+     }
+
+     .box-container_3_1 {
+        width: 100%;
+        position: relative;
+     }
+     .box-container_3_1_1 {
+        width: 100%;
+        position: relative;
+     }
+
+     .box-container_3_1_1 .text-overlay {
+        font-size: 60px;
+     }
+     .box-container_3_1_2 li, .box-container_3_1_2 p, .box-container_3_1_2 h3 {
+        font-size: 25px;
+     }
+
+     /* Awal Footer */
+     .box-container_4 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+    }
+
+    .box-container_4 h1 {
+        font-size: 40px;
+    }
+
+    .box-container_4 h2 {
+        font-size: 35px;
+    }
+
+    .box-container_4 h3 {
+        font-size: 30px;
+    }
+
+    .box-container_4 p {
+        font-size: 22px;
+    }
+
+    .box-container_4_2 {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .box-container_4_1 {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .box-container_4_2_1 {
+        width: 100%;
+        height: auto;
+    }
+    .box-container_4_2_2 {
+        width: 100%;
+        height: auto;
+    }
+    .box-container_4_3 {
+        width: 100%;
+    }
+    .box-container_4_3_2 {
+        width: 100%;
+    }
+    /* Akhir Footer */
+    
+}
+
+
+
+@media only screen and (min-width: 1200px){
+
+    h1 {
+        font-size: 45px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+
+
+    .box-container_1 h1 {
+        font-size: 70px;
+    }
+
+     .box-container_0_0 {
+        width: 100%;
+        height: auto;
+     }
+
+     .box-container_0_1 h1 {
+        font-size: 45px;
+        height: auto;
+     }
+     .box-container_0_1 h2, .box-container_0_1 li{
+        font-size: 25px;
+     }
+     .box-container_0_1 h3 {
+        font-size: 30px;
+     }
+
+     .box-container_2 {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+     }
+
+     .box-container_2_1 {
+        height: auto;
+        width: 40%;
+        position: relative;
+     }
+     .box-container_2_1 img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+     }
+
+     .box-container_2_2 {
+        height: auto;
+        width: 60%;
+        /* position: relative; */
+     }
+    
+     .box-container_2_1 .text-overlay {
+        font-size: 25px;
+     }
+
+     .box-container_3 {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+    
+     }
+
+     .box-container_3_1 {
+        height: auto;
+        width: 50%;
+     }
+     .box-container_3_1_1 {
+        height: 15%;
+        width: 100%;
+     }
+     .box-container_3_1_2 {
+        height: 85%;
+        width: 100%;
+     }
+
+     .box-container_3_1_1 .text-overlay {
+        font-size: 60px;
+     }
+     .box-container_3_1_2 li, .box-container_3_1_2 p, .box-container_3_1_2 h3 {
+        font-size: 25px;
+     }
+
+     /* Awal Footer */
+     .box-container_4 {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: center;
+    }
+
+    .box-container_4 h1 {
+        font-size: 35px;
+    }
+
+    .box-container_4 h2 {
+        font-size: 30px;
+    }
+
+    .box-container_4 h3 {
+        font-size: 25px;
+    }
+
+    .box-container_4 p {
+        font-size: 22px;
+    }
+
+    .box-container_4_1 {
+        position: relative;
+        width: 33.33%;
+        height: auto;
+    }
+    .box-container_4_2 {
+        position: relative;
+        width: 33.33%;
+        height: auto;
+    }
+    .box-container_4_2_1 {
+        width: 100%;
+        height: auto;
+    }
+    .box-container_4_2_2 {
+        width: 100%;
+        height: auto;
+    }
+    .box-container_4_3 {
+        height: auto;
+        width: 33.33%;
+    }
+    .box-container_4_3_2 {
+        width: 100%;
+        height: auto;
+    }
+    .box-container_4_3_3 {
+        margin-top: 2rem;
+        width: 100%;
+        height: auto;
+    }
+    /* Akhir Footer */
+    
 }
