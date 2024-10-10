@@ -24,6 +24,28 @@ $(document).ready(function() {
 
     textLoad(); 
     setInterval(textLoad, 4000); 
+
+    // untuk accordion menu
+    $('.accordion-btn').click(function () {
+        $(this).toggleClass('active');
+        
+        const content = $(this).next();
+        if (content.css('display') === 'block') {
+          content.css('display', 'none');
+        } else {
+          content.css('display', 'block');
+        }
+    });
+
+    window.markDay = function(day) {
+        var statusId = '#' + day + '-status';
+        $(statusId).html('<i class="bx bx-check-circle" style="color:green;"></i>'); // Add green checkmark
+
+        $(statusId).closest('.accordion-item').find('.mark-done').prop('disabled', true).css({
+            backgroundColor: '#218838',
+            cursor: 'not-allowed'
+        });
+    };
 });
 
 // menggunakan javascript untuk animasi gambar

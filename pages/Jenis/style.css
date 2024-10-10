@@ -121,12 +121,10 @@ body {
         left: 0%;
     }
 }
-
-/* end moving character */
+/*============*/
 
 
 /* isi section */
-
 .testing{
     display: grid;
     grid-template-columns: repeat(7,205px);
@@ -229,6 +227,98 @@ span::before{
     object-position: 100% 50%;
     flex-shrink: 0;
     border-radius: 2rem;
+}
+
+/* accordion untuk menu latihan */
+.accord {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #111;
+}
+
+.accordion-container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #0d1b2a;
+    animation: anime 2s ease forwards;
+    animation-delay: .8s;
+}
+  
+.accordion-container, .accordionte {
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.accordion-item {
+    margin-bottom: 1.5rem;
+}
+
+.accordion-btn {
+    width: 100%; /* Ensure buttons take full width of the container */
+    padding: 0.6rem;
+    text-align: left;
+    background-color: #FF6B6B;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+    
+.accordion-btn:hover {
+    background-color: #f1c40f;
+}
+    
+.accordion-content {
+    padding: 1rem;
+    background-color: #000000;
+    display: none;
+    font-size: 1.4rem;
+}
+    
+.accordion-content p {
+    margin-bottom: .5rem;
+}
+    
+.accordion-content h3 {
+    margin-bottom: .5rem;
+    color: #fff;
+}
+
+.status {
+    font-weight: bold;
+    color: #555;
+  }
+  
+.status.done {
+  color: green;
+}
+  
+.mark-done {
+    margin-top: 1rem;
+    padding: 0.4rem 1rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.7rem;
+    transition: background-color 0.3s ease;
+}
+  
+.mark-done:hover {
+    background-color: #218838;
 }
 
 /* slide animasi */
@@ -422,16 +512,15 @@ span::before{
         top: 0;
         right: 0;
         width: 100vw;
-        height: 200%;
+        height: 210%;
         background: #0d1b2a;
         animation: anime 1s ease forwards;
         animation-delay: .9s;
     }
-
+    
     .container .text{
         visibility: hidden;
     }
-
 }
 
 @media (max-width: 435px){
