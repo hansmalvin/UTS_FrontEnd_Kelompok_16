@@ -88,72 +88,6 @@ body {
     }
 }
 
-/* media */
-
-@media (max-width: 1200px){
-    html{
-        font-size: 55%;
-    }
-}
-
-@media (max-width: 991px){
-    .header{
-        padding: 2rem 4%;
-    }
-    .item1{
-        align-items: center;
-    }
-
-}
-
-@media (max-width: 768px){
-    .header{
-        background: #0d1b2a;
-    }
-
-    #icon-utk-menu{
-        display: block;
-    }
-
-    .navbar{
-        position: absolute;
-        top: 100%;
-        left: -100%;
-        width: 100%;
-        padding: 1rem 4%;
-        background: #0d1b2a;
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-        transition: .25s ease;
-        transition-delay: .25s;
-    }
-
-    .navbar.active{
-        left: 0;
-        transition-delay: 0s;
-    }
-
-    .navbar a{
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-}
-
-@media (max-width: 520px){
-    html{
-        font-size: 50%;
-    }
-}
-
-@media (max-width: 462px){
-
-}
-
-@media (max-width: 370px){
-
-}
-
-
 .box-container_basic {
     height: 2000px;
     border-radius: 10px;
@@ -169,7 +103,7 @@ body {
     border-radius: 10px;
 }
 
-/*  */
+/* untuk search bar nya */
 
 .search-bar {
     text-align: center;
@@ -189,8 +123,8 @@ body {
     border-color: #FF6B6B;
 }
 
+/*==========*/
 
-/*  */
 
 h1 {
     font-size: 2.5rem;
@@ -269,10 +203,8 @@ h1 {
 
 
 /* Footer */
-
 .box-container_4 {
     height: 400px;
-    /* background-color: antiquewhite;  */
     border-radius: 10px;
     display: flex;
     padding-left: 8%;
@@ -316,50 +248,41 @@ h1 {
     width: 28%;
     height: 380px;
     border-radius: 10px;
-    /* background-color: rgb(222, 163, 86); */
-    
 }
 
 .box-container_4_2 {
     width: 28%;
     height: 380px;
     border-radius: 10px;
-    /* background-color: rgb(222, 163, 86); */
     display: flex;
-    
 }
 
 .box-container_4_2_1 {
     width: 50%;
     height: 380px;
     border-radius: 10px;
-    /* background-color: rgb(128, 39, 113); */
 }
 
 .box-container_4_2_2 {
     width: 50%;
     height: 380px;
     border-radius: 10px;
-    /* background-color: rgb(57, 207, 102); */
 }
 
-/* Atur warna default untuk link */
 .box-container_4_2 a:link,
 .box-container_4_2 a:visited {
-    color: #ffffff; /* Warna default link */
-    text-decoration: none; /* Menghilangkan garis bawah pada link */
-    transition: color 1.5s ease; /* Animasi transisi saat berubah warna */
+    color: #ffffff; 
+    text-decoration: none; 
+    transition: color 1.5s ease; 
 }
 
-/* Ubah warna saat di-hover */
 .box-container_4_2 a:hover {
-    color: #ff6b6b; /* Warna saat link di-hover */
-    text-decoration: none; /* Opsional: menambahkan garis bawah saat di-hover */
+    color: #ff6b6b; 
+    text-decoration: none; 
 }
 
-/* Jika ingin mengubah warna saat link aktif diklik */
 .box-container_4_2 a:active {
-    color: #ff6b6b; /* Warna saat link aktif */
+    color: #ff6b6b;
 }
 
 
@@ -367,7 +290,6 @@ h1 {
     width: 28%;
     height: 380px;
     border-radius: 10px;
-    /* background-color: rgb(222, 163, 86); */
     display: flex;
     flex-direction: column;
 }
@@ -375,42 +297,38 @@ h1 {
 .box-container_4_3_1 {
     width: 100%;
     height: 80px;
-    /* background-color: silver; */
     border-radius: 10px;
 }
 
 .box-container_4_3_2 {
     width: 100%;
     height: 220px;
-    /* background-color: darkkhaki; */
     border-radius: 10px;
 }
 
 .box-container_4_3_3 {
     width: 100%;
     height: 90px;
-    /* background-color: rgb(85, 150, 138); */
     border-radius: 10px;
 }
 
 p {
-    font-family: "Helvetica Neue", "Oswald", Helvetica, Arial, sans-serif; /* Font yang Anda pilih */
+    font-family: "Helvetica Neue", "Oswald", Helvetica, Arial, sans-serif; 
     font-size: 16px;
     font-weight: bold;
     color: #ffffff;
-    transition: color 1s ease-in-out, transform 0.5s ease-in-out; /* Animasi yang diinginkan */
+    transition: color 1s ease-in-out, transform 0.5s ease-in-out; 
     cursor: pointer;
 }
 
 
 p:hover {
-    color: #FF6B6B; /* Warna saat hover */
-    transform: scale(1.009); /* Efek zoom saat di-hover */
+    color: #FF6B6B; 
+    transform: scale(1.009); 
 }
 
 
 @media only screen and (min-width: 320px){
-    /* Awal Footer */
     .box-container_4 {
        display: flex;
        flex-direction: column;
@@ -446,6 +364,38 @@ p:hover {
    
 }
 
+@media (max-width: 768px){
+    .header{
+        background: #0d1b2a;
+    }
+
+    #icon-utk-menu{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 1rem 4%;
+        background: #0d1b2a;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        transition: .25s ease;
+        transition-delay: .25s;
+    }
+
+    .navbar.active{
+        left: 0;
+        transition-delay: 0s;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+}
 
 @media only screen and (min-width: 600px){
 
