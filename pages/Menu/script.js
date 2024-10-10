@@ -12,7 +12,6 @@ $(document).ready(function() {
     });
 
 
-
     $(window).scroll(function() {
         $('header').toggleClass('scroll', $(window).scrollTop() > 100);
 
