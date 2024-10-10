@@ -125,6 +125,7 @@ body {
 
 
 /* isi section */
+
 .testing{
     display: grid;
     grid-template-columns: repeat(7,205px);
@@ -320,6 +321,7 @@ h1 {
 .mark-done:hover {
     background-color: #218838;
 }
+
 
 /* slide animasi */
 @keyframes anime{
@@ -1019,9 +1021,6 @@ h1 {
         font-size: 2rem;
         margin: 3rem 0;
     }
-
-
-    /* bagian utama */
 
     .testing{
         display: grid;
