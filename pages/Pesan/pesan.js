@@ -1,17 +1,31 @@
-// document.querySelector('.pesan-form').addEventListener('submit', function(event) {
-//     event.preventDefault();
-//     const nama = document.getElementById('nama').value;
-//     const email = document.getElementById('email').value;
-//     const pesan = document.getElementById('pesan').value;
+$(document).ready(function() {
+    $('#icon-utk-menu').click(function() {
+        $(this).toggleClass('bx-x');
+        $('.navbar').toggleClass('active');
+    });
 
-//     // Simulasi pengiriman pesan
-//     document.getElementById('response-message').textContent = `Terima kasih, ${nama}! Pesan Anda telah diterima.`;
-    
-//     // Reset form
-//     document.getElementById('nama').value = '';
-//     document.getElementById('email').value = '';
-//     document.getElementById('pesan').value = '';
-// });
+    // buat alert dulu
+    $('a[href="#error"]').click(function(event) {
+        event.preventDefault(); 
+        alert('Coming Soon !');
+    });
 
-// Optionally, you can add interactive JS functionality for more dynamic features
-console.log("Chat page loaded");
+    $(window).scroll(function() {
+        $('section').each(function() {
+            let top = $(window).scrollTop();
+            let offset = $(this).offset().top - 100;
+            let height = $(this).outerHeight();
+            let id = $(this).attr('id');
+            
+            if (top >= offset && top < offset + height) {
+                $('header nav a').removeClass('active');
+                $('header nav a[href*=' + id + ']').addClass('active');
+            }
+        });
+
+        $('header').toggleClass('scroll', $(window).scrollTop() > 100);
+
+        $('#icon-utk-menu').removeClass('bx-x');
+        $('.navbar').removeClass('active');
+    });
+});
