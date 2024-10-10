@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    // jquery untuk navbar
     $('#icon-utk-menu').click(function() {
         $(this).toggleClass('bx-x');
         $('.navbar').toggleClass('active');

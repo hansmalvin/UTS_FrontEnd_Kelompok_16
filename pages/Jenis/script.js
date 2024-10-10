@@ -1,13 +1,8 @@
 $(document).ready(function() {
+    // animasi class burger icon
     $('#icon-utk-menu').click(function() {
         $(this).toggleClass('bx-x');
         $('.navbar').toggleClass('active');
-    });
-
-    // buat alert dulu
-    $('a[href="#error"]').click(function(event) {
-        event.preventDefault(); 
-        alert('Coming Soon !');
     });
 
     $(window).scroll(function() {
@@ -17,6 +12,7 @@ $(document).ready(function() {
         $('.navbar').removeClass('active');
     });
 
+    // animasi text typing
     const text = $(".sec-text");
     const words = ["Mari coba", "Menu latihan kami"]; 
     let index = 0; 
@@ -30,6 +26,7 @@ $(document).ready(function() {
     setInterval(textLoad, 4000); 
 });
 
+// menggunakan javascript untuk animasi gambar
 const track = document.getElementById("image-track");
 window.onmousedown = e => {
     track.dataset.mouseDownAt = e.clientX;
