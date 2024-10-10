@@ -75,6 +75,87 @@
             <p>>>></p>
         </div>
     </section>
+
+    <!-- section jadwal latihan -->
+
+    <section class="accord">
+        <div class="accordion-container">
+            <!-- hari pertama/hari senin -->
+            <div class="accordion-item">
+                <button class="accordion-btn">Hari 1 - Dada & Triceps <span id="monday-status" class="status"></span></button>
+                <div class="accordion-content">
+                <h3>Dada:</h3>
+                <p><b>Gerakan Majemuk:</b> Incline bench press atau variasi lainnya (3 set dengan 6-10 repetisi dengan beban sedang, istirahat 2-3 menit).</p>
+                <p><b>Gerakan Isolasi:</b> Pec fly atau variasi lainnya (3 set dengan 8-12 repetisi dengan beban ringan-sedang, istirahat 2-3 menit).</p>
+                <h3>Triceps:</h3> 
+                <p><b>Overhead Cable Extension:</b> 3 set dengan 6-10 repetisi dengan beban sedang - berat, istirahat 2-3 menit.</p>
+                <p><b>Pushdown:</b> 3 set dengan 6-10 repetisi dengan beban sedang - berat, istirahat 2-3 menit.</p>
+                <button class="mark-done" onclick="markDay('monday')">Sudah Selesai</button>
+                </div>
+            </div> 
+          
+            <!-- selasa/hari kedua -->
+            <div class="accordion-item">
+                <button class="accordion-btn">Hari 2 - Punggung & Biceps <span id="tuesday-status" class="status"></span></button>
+              <div class="accordion-content">
+                <h3>Punggung:</h3>
+                <p><b>Variasi Pulldown:</b> 4 set (1 set pemanasan, 3 set utama dengan 6-10 repetisi dengan beban sedang - berat).</p>
+                <p><b>Variasi Row:</b> 3 set dengan 8-12 repetisi dengan beban sedang.</p>
+                <h3>Biceps:</h3>
+                <p><b>Concentration Curl:</b> 3 set dengan 8-10 repetisi dengan beban sedang.</p>
+                <button class="mark-done" onclick="markDay('tuesday')">Sudah Selesai</button>
+              </div>
+            </div>
+        
+            <!-- rabu/hari ketiga -->
+            <div class="accordion-item">
+                <button class="accordion-btn">Istirahat<span id="wednesday" class="status"></span></button>
+                <div class="accordion-content">
+                <p>Setelah 2 hari olahraga, tubuh memerlukan waktu untuk beristirahat agar sel otot dapat bertumbuh, 
+                    pastikan mendapat nutrisi yang cukup juga.</p>
+                <button class="mark-done" onclick="markDay('wednesday')">Sudah Selesai</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="accordionte">
+            <!-- kamis/hari keempat -->
+          <div class="accordion-item">
+            <button class="accordion-btn">Hari 4 Bahu<span id="kamis-status" class="status"></span></button>
+            <div class="accordion-content">
+              <p><b>Lateral Raises:</b> 4 set dengan 12-15 repetisi dengan beban ringan.</p>
+              <p><b>Shoulder Press:</b> 3 set dengan 10-12 repetisi dengan beban sedang - berat.</p>
+              <p><b>Rear Delt Fly:</b> 3 set dengan 12-15 repetisi dengan beban ringan - sedang.</p>
+              <button class="mark-done" onclick="markDay('kamis')">Sudah Selesai</button>
+            </div>
+          </div>
+          
+        <!-- jumat/hari kelima -->
+        <div class="accordion-item">
+          <button class="accordion-btn">Hari 5 Kaki(otot Paha)<span id="jumat-status" class="status"></span></button>
+          <div class="accordion-content">
+            <p><b>Squats:</b> 4-5 set dengan 8-10 repetisi dengan beban sedang.</p>
+            <p><b>Leg Curl:</b> 3 set dengan 10-12 repetisi dengan beban sedang - berat.</p>
+            <p><b>Leg Extension:</b> 3 set dengan 12-15 repetisi dengan beban sedang - berat.</p>
+            <button class="mark-done" onclick="markDay('jumat')">Sudah Selesai</button>
+          </div>
+        </div>
+
+        <!-- sabtu/hari keenam -->
+        <div class="accordion-item">
+          <button class="accordion-btn">Hari 6 Biceps & Triceps<span id="sabtu-status" class="status"></span></button>
+          <div class="accordion-content">
+            <h3>Biceps:</h3>
+            <p><b>Concentration Curl:</b> 3 set dengan 8-10 repetisi dengan beban sedang.</p>
+            <h3>Triceps:</h3> 
+            <p><b>Overhead Cable Extension:</b> 3 set dengan 6-10 repetisi dengan beban sedang - berat, istirahat 2-3 menit.</p>
+            <p><b>Pushdown:</b> 3 set dengan 6-10 repetisi dengan beban sedang - berat, istirahat 2-3 menit.</p>
+            <button class="mark-done" onclick="markDay('sabtu')">sudah selesai</button>
+          </div>
+        </div>
+      </div> 
+    </section>
         
     <script src="/pages/Jenis/script.js"></script>
 </body>
