@@ -1,3 +1,4 @@
+/* <--  AWAL NAVBAR --> */
 * {
     margin: 0;
     padding: 0;
@@ -166,6 +167,7 @@ body {
 
 
 
+
 /* <--  AKHIR NAVBAR --> */
 
 .box-container_basic {
@@ -173,6 +175,7 @@ body {
     border-radius: 10px;
     background-color: #FF6B6B;
 }
+
 
 .box-container_0_0 {
     height: 350px;
@@ -211,7 +214,6 @@ body {
 }
 
 
-
 .box-container_1 {
     position: relative;
     height: 600px;
@@ -239,6 +241,16 @@ body {
     z-index: 11;
     text-shadow: 4px 4px 0.1px rgba(0, 0, 0, 0.7);
 }
+
+.box-container_0_0 {
+    height: 350px;
+    border-radius: 10px;
+    display: flex; /* Menggunakan flexbox */
+    justify-content: center; /* Memposisikan secara horizontal */
+    align-items: center;
+    /* background-color: #816bff; */
+}
+
 
 .box-container_2 {
     height: 400px;
@@ -300,23 +312,29 @@ h3 {
     z-index: 1;
 }
 
-/* Styling untuk teks overlay */
-.box-container_2_1 .text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    text-align: left;
-    z-index: 2;
+/* Styling untuk gambar post */
+.post-image img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
 }
 
-.box-container_2_1:hover .text-overlay {
-    opacity: 1;
+/* Konten blog post */
+.post-content {
+    max-width: 60%; /* Memastikan lebar konten maksimal 60% */
+}
+
+.post-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.post-category {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 15px;
 }
 
 .box-container_2_2 {
@@ -327,6 +345,13 @@ h3 {
     padding: 40px;
     box-shadow: 0 2px 4px #a56b6b;
     transition: transform 0.3 ease , transform 0.3 ease;
+}
+
+
+.box-container_2_2:hover {
+    transform: translateY(-15px);
+    /* border: 2px solid #ff6b6b; */
+    box-shadow: 3px 6px 10px #364e4f;
 }
 
 
@@ -464,407 +489,208 @@ h3 {
 .naik p {
     font-family: "Helvetica Neue", "Oswald", Helvetica, Arial, sans-serif; /* Font yang Anda pilih */
     font-size: 16px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Tombol aksi */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF6B6B;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
     font-weight: bold;
     color: #ffffff;
     transition: color 1s ease-in-out, transform 0.5s ease-in-out; /* Animasi yang diinginkan */
     cursor: pointer;
 }
 
-
-.naik p:hover {
-    color: #FF6B6B; /* Warna saat hover */
-    transform: scale(1.2); /* Efek zoom saat di-hover */
+.btn:hover {
+    background-color: #e55a5a;
 }
 
-/* belum responsive */
-/* media */
-
-@media (max-width: 1200px){
-    html{
-        font-size: 55%;
-    }
-}
-
-@media (max-width: 991px){
-    .header{
-        padding: 2rem 4%;
-    }
-    .item1{
-        align-items: center;
+/* Responsivitas untuk layar kecil */
+@media (max-width: 768px) {
+    .blog-post {
+        flex-direction: column;
+        text-align: center;
     }
 
-}
-
-@media (max-width: 768px){
-    .header{
-        background: #0d1b2a;
+    .post-content {
+        max-width: 100%; /* Memastikan lebar konten 100% */
     }
 
-    #icon-utk-menu{
-        display: block;
-    }
-
-    .navbar{
-        position: absolute;
-        top: 100%;
-        left: -100%;
+    .post-image img {
         width: 100%;
-        padding: 1rem 4%;
-        background: #0d1b2a;
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-        transition: .25s ease;
-        transition-delay: .25s;
+        margin-bottom: 20px;
     }
 
-    .navbar.active{
-        left: 0;
-        transition-delay: 0s;
+    .post-title {
+        font-size: 22px;
     }
 
-    .navbar a{
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-}
-
-@media (max-width: 520px){
-    html{
-        font-size: 50%;
-    }
-}
-
-/* media */
-
-@media only screen and (min-width: 320px){
-
-    h1 {
-        font-size: 20px;
-    }
-    
-    h2 {
+    .post-text {
         font-size: 14px;
     }
-    h3 {
-        font-size: 16px;
-    }
+}
 
 
-    .box-container_1 h1 {
-        font-size: 40px;
-    }
+@media only screen and (min-width: 320px){
+    /* Awal Footer */
+    .box-container_4 {
+       display: flex;
+       flex-direction: column;
+       height: auto;
+       justify-content: center;
+   }
 
-     .box-container_0_0 {
-        width: 100%;
-        height: auto;
-     }
-     .box-container_0_1 {
-        width: 90%;
-        height: auto;
-     }
-
-     .box-container_0_1 h1 {
-        font-size: 20px;
-        height: auto;
-     }
-     .box-container_0_1 h2, .box-container_0_1 li{
-        font-size: 15px;
-     }
-     .box-container_0_1 h3 {
-        font-size: 17px;
-     }
-
-     .box-container_2 {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-     }
-
-     .box-container_2_1 {
-        height: 30%;
-        width: 100%;
-        /* position: relative; */
-     }
-     .box-container_2_2 {
-        height: 70%;
-        width: 100%;
-        position: relative;
-     }
-    
-     .box-container_2_1 .text-overlay {
-        font-size: 15px;
-     }
-
-     /* Awal Footer */
-     .box-container_4 {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        justify-content: center;
-    }
-
-    .box-container_4_2 {
-        position: relative;
-        width: 100%;
-        height: auto;
-    }
-    .box-container_4_1 {
-        position: relative;
-        width: 100%;
-        height: auto;
-    }
-    .box-container_4_2_1 {
-        width: 100%;
-        height: auto;
-    }
-    .box-container_4_2_2 {
-        width: 100%;
-        height: auto;
-    }
-    .box-container_4_3 {
-        width: 100%;
-    }
-    .box-container_4_3_2 {
-        width: 100%;
-    }
-    /* Akhir Footer */
-    
+   .box-container_4_2 {
+       position: relative;
+       width: 100%;
+       height: auto;
+   }
+   .box-container_4_1 {
+       position: relative;
+       width: 100%;
+       height: auto;
+   }
+   .box-container_4_2_1 {
+       width: 100%;
+       height: auto;
+   }
+   .box-container_4_2_2 {
+       width: 100%;
+       height: auto;
+   }
+   .box-container_4_3 {
+       width: 100%;
+   }
+   .box-container_4_3_2 {
+       width: 100%;
+   }
+   /* Akhir Footer */
+   
 }
 
 
 @media only screen and (min-width: 600px){
 
-    h1 {
-        font-size: 45px;
-    }
-    
-    h2 {
-        font-size: 20px;
-    }
-    h3 {
-        font-size: 30px;
-    }
+    /* Awal Footer */
+    .box-container_4 {
+       display: flex;
+       flex-direction: column;
+       height: auto;
+       justify-content: center;
+   }
 
+   .box-container_4 h1 {
+       font-size: 40px;
+   }
 
-    .box-container_1 h1 {
-        font-size: 70px;
-    }
+   .box-container_4 h2 {
+       font-size: 35px;
+   }
 
-     .box-container_0_0 {
-        width: 100%;
-        height: auto;
-     }
+   .box-container_4 h3 {
+       font-size: 30px;
+   }
 
-     .box-container_0_1 h1 {
-        font-size: 45px;
-        height: auto;
-     }
-     .box-container_0_1 h2, .box-container_0_1 li{
-        font-size: 25px;
-     }
-     .box-container_0_1 h3 {
-        font-size: 30px;
-     }
+   .box-container_4 p {
+       font-size: 22px;
+   }
 
-     .box-container_2 {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-     }
-
-     .box-container_2_1 {
-        height: 30%;
-        width: 100%;
-        position: relative;
-     }
-     .box-container_2_2 {
-        height: 70%;
-        width: 100%;
-        /* position: relative; */
-     }
-    
-     .box-container_2_1 .text-overlay {
-        font-size: 30px;
-     }
-
-     .box-container_3 {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-     }
-
-     /* Awal Footer */
-     .box-container_4 {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        justify-content: center;
-    }
-
-    .box-container_4 h1 {
-        font-size: 40px;
-    }
-
-    .box-container_4 h2 {
-        font-size: 35px;
-    }
-
-    .box-container_4 h3 {
-        font-size: 30px;
-    }
-
-    .box-container_4 p {
-        font-size: 22px;
-    }
-
-    .box-container_4_2 {
-        position: relative;
-        width: 100%;
-        height: auto;
-    }
-    .box-container_4_1 {
-        position: relative;
-        width: 100%;
-        height: auto;
-    }
-    .box-container_4_2_1 {
-        width: 100%;
-        height: auto;
-    }
-    .box-container_4_2_2 {
-        width: 100%;
-        height: auto;
-    }
-    .box-container_4_3 {
-        width: 100%;
-    }
-    .box-container_4_3_2 {
-        width: 100%;
-    }
-    /* Akhir Footer */
-    
+   .box-container_4_2 {
+       position: relative;
+       width: 100%;
+       height: auto;
+   }
+   .box-container_4_1 {
+       position: relative;
+       width: 100%;
+       height: auto;
+   }
+   .box-container_4_2_1 {
+       width: 100%;
+       height: auto;
+   }
+   .box-container_4_2_2 {
+       width: 100%;
+       height: auto;
+   }
+   .box-container_4_3 {
+       width: 100%;
+   }
+   .box-container_4_3_2 {
+       width: 100%;
+   }
+   /* Akhir Footer */
+   
 }
 
 
 
 @media only screen and (min-width: 1200px){
 
-    h1 {
-        font-size: 45px;
-    }
-    
-    h2 {
-        font-size: 20px;
-    }
-    h3 {
-        font-size: 30px;
-    }
+    /* Awal Footer */
+    .box-container_4 {
+       display: flex;
+       flex-direction: row;
+       height: auto;
+       justify-content: center;
+   }
 
+   .box-container_4 h1 {
+       font-size: 35px;
+   }
 
-    .box-container_1 h1 {
-        font-size: 70px;
-    }
+   .box-container_4 h2 {
+       font-size: 30px;
+   }
 
-     .box-container_0_0 {
-        width: 100%;
-        height: auto;
-     }
+   .box-container_4 h3 {
+       font-size: 25px;
+   }
 
-     .box-container_0_1 h1 {
-        font-size: 45px;
-        height: auto;
-     }
-     .box-container_0_1 h2, .box-container_0_1 li{
-        font-size: 25px;
-     }
-     .box-container_0_1 h3 {
-        font-size: 30px;
-     }
+   .box-container_4 p {
+       font-size: 22px;
+   }
 
-     .box-container_2 {
-        display: flex;
-        flex-direction: row;
-        height: auto;
-     }
-
-     .box-container_2_1 {
-        height: auto;
-        width: 40%;
-        position: relative;
-     }
-     .box-container_2_1 img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-     }
-
-     .box-container_2_2 {
-        height: auto;
-        width: 60%;
-        /* position: relative; */
-     }
-    
-     .box-container_2_1 .text-overlay {
-        font-size: 25px;
-     }
-
-     /* Awal Footer */
-     .box-container_4 {
-        display: flex;
-        flex-direction: row;
-        height: auto;
-        justify-content: center;
-    }
-
-    .box-container_4 h1 {
-        font-size: 35px;
-    }
-
-    .box-container_4 h2 {
-        font-size: 30px;
-    }
-
-    .box-container_4 h3 {
-        font-size: 25px;
-    }
-
-    .box-container_4 p {
-        font-size: 22px;
-    }
-
-    .box-container_4_1 {
-        position: relative;
-        width: 33.33%;
-        height: auto;
-    }
-    .box-container_4_2 {
-        position: relative;
-        width: 33.33%;
-        height: auto;
-    }
-    .box-container_4_2_1 {
-        width: 100%;
-        height: auto;
-    }
-    .box-container_4_2_2 {
-        width: 100%;
-        height: auto;
-    }
-    .box-container_4_3 {
-        height: auto;
-        width: 33.33%;
-    }
-    .box-container_4_3_2 {
-        width: 100%;
-        height: auto;
-    }
-    .box-container_4_3_3 {
-        margin-top: 2rem;
-        width: 100%;
-        height: auto;
-    }
-    /* Akhir Footer */
-    
+   .box-container_4_1 {
+       position: relative;
+       width: 33.33%;
+       height: auto;
+   }
+   .box-container_4_2 {
+       position: relative;
+       width: 33.33%;
+       height: auto;
+   }
+   .box-container_4_2_1 {
+       width: 100%;
+       height: auto;
+   }
+   .box-container_4_2_2 {
+       width: 100%;
+       height: auto;
+   }
+   .box-container_4_3 {
+       height: auto;
+       width: 33.33%;
+   }
+   .box-container_4_3_2 {
+       width: 100%;
+       height: auto;
+   }
+   .box-container_4_3_3 {
+       margin-top: 2rem;
+       width: 100%;
+       height: auto;
+   }
+   /* Akhir Footer */
+   
 }
 
 

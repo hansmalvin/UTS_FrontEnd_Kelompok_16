@@ -43,6 +43,7 @@ body {
     border-radius: 10px;
     object-fit: cover;
     margin-right: 20px;
+    margin-top:50px;
 }
 
 .post-content {
@@ -54,7 +55,7 @@ body {
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 20px;
-    margin-top: 100px;
+    margin-top: 140px;
 }
 
 .post-category {
@@ -110,4 +111,28 @@ body {
     .post-text {
         font-size: 14px;
     }
+}
+
+/* Tombol Back */
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #FF6B6B;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #e55a5a;
+}
+
+.back-btn i {
+    margin-right: 5px; /* Icon spacing */
 }
