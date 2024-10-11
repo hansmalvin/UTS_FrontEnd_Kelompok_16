@@ -1,17 +1,14 @@
-// document.querySelector('.pesan-form').addEventListener('submit', function(event) {
-//     event.preventDefault();
-//     const nama = document.getElementById('nama').value;
-//     const email = document.getElementById('email').value;
-//     const pesan = document.getElementById('pesan').value;
+$(document).ready(function() {
+    // jquery untuk navbar
+    $('#icon-utk-menu').click(function() {
+        $(this).toggleClass('bx-x');
+        $('.navbar').toggleClass('active');
+    });
 
-//     // Simulasi pengiriman pesan
-//     document.getElementById('response-message').textContent = `Terima kasih, ${nama}! Pesan Anda telah diterima.`;
-    
-//     // Reset form
-//     document.getElementById('nama').value = '';
-//     document.getElementById('email').value = '';
-//     document.getElementById('pesan').value = '';
-// });
+    $(window).scroll(function() {
+        $('header').toggleClass('scroll', $(window).scrollTop() > 100);
 
-// Optionally, you can add interactive JS functionality for more dynamic features
-console.log("Chat page loaded");
+        $('#icon-utk-menu').removeClass('bx-x');
+        $('.navbar').removeClass('active');
+    });
+});
