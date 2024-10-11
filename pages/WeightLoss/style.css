@@ -214,7 +214,6 @@ body {
 }
 
 
-
 .box-container_1 {
     position: relative;
     height: 600px;
@@ -231,6 +230,16 @@ body {
     object-fit: cover;
     z-index: 10;
     /* border-radius: 10px; */
+}
+
+.box-container_1 h1 {
+    position: absolute;
+    color: white;
+    font-size: 8rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 11;
+    text-shadow: 4px 4px 0.1px rgba(0, 0, 0, 0.7);
 }
 
 .box-container_0_0 {
