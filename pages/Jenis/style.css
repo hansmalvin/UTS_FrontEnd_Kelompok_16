@@ -123,9 +123,7 @@ body {
 }
 /*============*/
 
-
 /* isi section */
-
 .testing{
     display: grid;
     grid-template-columns: repeat(7,205px);
@@ -254,7 +252,7 @@ h1 {
     height: 100%;
     background: #0d1b2a;
     animation: anime 2s ease forwards;
-    animation-delay: .8s;
+    animation-delay: .9s;
 }
   
 .accordion-container, .accordionte {
@@ -263,13 +261,13 @@ h1 {
     margin-bottom: 1rem;
 }
 
+
 .accordion-item {
     margin-bottom: 1.5rem;
 }
 
 .accordion-btn {
-
-    width: 100%; /* Ensure buttons take full width of the container */
+    width: 100%;
     padding: 0.6rem;
     text-align: left;
     background-color: #FF6B6B;
@@ -309,7 +307,6 @@ h1 {
 }
 
 /* animasi kayak mark as done */
-  
 .mark-done {
     margin-top: 1rem;
     padding: 0.4rem 1rem;
@@ -1185,6 +1182,3 @@ h1 {
    /* Akhir Footer */
    
 }
-
-
-

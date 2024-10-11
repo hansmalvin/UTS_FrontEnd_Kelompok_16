@@ -6,15 +6,12 @@ $(document).ready(function() {
         $('.navbar').toggleClass('active');
     });
 
-
     // Membuat alert jika href "#error" diklik
     $('a[href="#error"]').click(function(event) {
         event.preventDefault();
         // Menampilkan pesan "Coming Soon !" saat link diklik
         alert('Coming Soon !');
     });
-
-
 
     // Fungsi yang dijalankan saat pengguna scroll halaman
     $(window).scroll(function() {
@@ -30,9 +27,10 @@ $(document).ready(function() {
                 $('header nav a[href*=' + id + ']').addClass('active');
             }
         });
-        // Menambahkan atau menghapus class "scroll" pada elemen header
+      
+    // Menambahkan atau menghapus class "scroll" pada elemen header
+    $(window).scroll(function() {
         $('header').toggleClass('scroll', $(window).scrollTop() > 100);
-
         // Menghapus class "bx-x" dari ikon menu setelah pengguna menggulir halaman
         $('#icon-utk-menu').removeClass('bx-x');
         // Menutup menu navigasi dengan menghapus class "active" dari elemen navbar
