@@ -17,6 +17,8 @@ body {
     color: #e5e5e5;
 }
 
+/* navbar, header */
+
 .header {
     display: flex;
     position: fixed;
@@ -71,18 +73,17 @@ body {
 .navbar a.active {
     color: #4ecdc4;
 }
+/* ======================== */
 
-/* burger */
+/* burger icon */
 #icon-utk-menu{
     font-size: 3.5rem;
     color: #e5e5e5;
     cursor: pointer;
     display: none;
 }
-/* burger */
 
 /* bikin moving type character */
-
 .container{
     grid-area: 1/1/5/5;
     margin-top: 13rem;
@@ -120,11 +121,10 @@ body {
         left: 0%;
     }
 }
+/*============*/
 
-/* end moving character */
 
-
-/* bagian isian 1 */
+/* isi section */
 
 .testing{
     display: grid;
@@ -199,6 +199,7 @@ span::before{
     animation-delay: .9s;
 }
 
+/* animasi gambar */
 
 .movingPic {
     padding: 2rem 0;
@@ -229,14 +230,121 @@ span::before{
     border-radius: 2rem;
 }
 
+/* accordion untuk menu latihan */
+.accord {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #111;
+}
+
+.accordion-container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #0d1b2a;
+    animation: anime 2s ease forwards;
+    animation-delay: .8s;
+}
+  
+.accordion-container, .accordionte {
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.accordion-item {
+    margin-bottom: 1.5rem;
+}
+
+.accordion-btn {
+
+    width: 100%; /* Ensure buttons take full width of the container */
+    padding: 0.6rem;
+    text-align: left;
+    background-color: #FF6B6B;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+    
+.accordion-btn:hover {
+    background-color: #f1c40f;
+}
+    
+.accordion-content {
+    padding: 1rem;
+    background-color: #000000;
+    display: none;
+    font-size: 1.4rem;
+}
+    
+.accordion-content p {
+    margin-bottom: .5rem;
+}
+    
+.accordion-content h3 {
+    margin-bottom: .5rem;
+    color: #fff;
+}
+
+.status {
+    font-weight: bold;
+    color: #555;
+  }
+  
+.status.done {
+  color: green;
+}
+
+/* animasi kayak mark as done */
+  
+.mark-done {
+    margin-top: 1rem;
+    padding: 0.4rem 1rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.7rem;
+    transition: background-color 0.3s ease;
+}
+  
+.mark-done:hover {
+    background-color: #218838;
+}
+
+/* text menu */
+.textMenu{
+    position: relative;
+    bottom: 4rem;
+    left: 16rem;
+    font-size: 2rem;
+}
+
+.textMenu p{
+    font-weight: 600;
+}
+
+/* slide animasi */
 @keyframes anime{
     100% {
         width: 0;
     }
 }
 
-/* media */
+/* media query responsif */
 
 @media (max-width: 1200px){
     html{
@@ -285,6 +393,7 @@ span::before{
     .header{
         padding: 2rem 4%;
     }
+
     .testing{
         display: grid;
         grid-template-columns: repeat(5,190px);
@@ -362,8 +471,6 @@ span::before{
         margin: 3rem 0;
     }
 
-    /* bagian utama */
-
     .testing{
         display: grid;
         grid-template-columns: repeat(8,100px);
@@ -421,16 +528,22 @@ span::before{
         top: 0;
         right: 0;
         width: 100vw;
-        height: 200%;
+        height: 210%;
         background: #0d1b2a;
         animation: anime 1s ease forwards;
         animation-delay: .9s;
     }
-
+    
     .container .text{
         visibility: hidden;
     }
 
+    .textMenu{
+        position: relative;
+        bottom: 4rem;
+        left: 5rem;
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 435px){
@@ -469,9 +582,6 @@ span::before{
         font-size: 2rem;
         margin: 3rem 0;
     }
-
-
-    /* bagian utama */
 
     .testing{
         display: grid;
@@ -546,6 +656,12 @@ span::before{
         overflow: hidden;
     }
 
+    .textMenu{
+        position: relative;
+        bottom: 4rem;
+        left: 16.5rem;
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 380px){
@@ -584,9 +700,6 @@ span::before{
         font-size: 2rem;
         margin: 3rem 0;
     }
-
-
-    /* bagian utama */
 
     .testing{
         display: grid;
@@ -647,7 +760,7 @@ span::before{
         top: 0;
         right: 0;
         width: 100%;
-        height: 200%;
+        height: 300%;
         background: #0d1b2a;
         animation: anime 1s ease forwards;
         animation-delay: .9s;
@@ -660,9 +773,263 @@ span::before{
     .movingPic{
         overflow-y: hidden;
     }
+
+    .textMenu{
+        position: relative;
+        bottom: 4rem;
+        left: 14.5rem;
+        font-size: 2rem;
+    }
+} 
+
+/* Awal Footer */
+
+.box-container_4 {
+    height: 400px;
+    /* background-color: antiquewhite;  */
+    border-radius: 10px;
+    display: flex;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10%;
+    border: 2px solid #ff6b6b;
+    box-shadow: 0 4px 8px #ff6b6b
 }
-=======
-/* Footer */
+
+
+
+.box-container_4 h1 {
+    color: whitesmoke;
+    font-size: 25px;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+.box-container_4 h2 {
+    color: #ff6b6b;
+    font-size: 25px;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+.box-container_4 h3 {
+    color: whitesmoke;
+    font-size: 18px;
+    letter-spacing: normal;
+}
+
+.box-container_4 h4 {
+    color: #ff6b6b;
+    font-size: 3em;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+
+.box-container_4_1 {
+    width: 28%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.box-container_4_2 {
+    width: 28%;
+    height: 380px;
+    border-radius: 10px;
+    display: flex;
+    
+}
+
+.box-container_4_2_1 {
+    width: 50%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.box-container_4_2_2 {
+    width: 50%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+
+.box-container_4_2 a:link, 
+.box-container_4_2 a:visited {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color .3s ease; 
+}
+
+
+.box-container_4_2 a:hover {
+    color: #ff6b6b;
+    text-decoration: none;
+}
+
+.box-container_4_2 a:active {
+    color: #ff6b6b;
+}
+
+
+.box-container_4_3 {
+    width: 28%;
+    height: 380px;
+    border-radius: 10px;
+    display: flex;    
+    flex-direction: column;
+}
+
+.box-container_4_3_1 {
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.box-container_4_3_2 {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+}
+
+.box-container_4_3_3 {
+    width: 100%;
+    height: 90px;
+    border-radius: 10px;
+}
+
+.naik p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+
+.naik p:hover {
+    color: #FF6B6B; /* Warna saat hover */
+    transform: scale(1.05); /* Efek zoom saat di-hover */
+}
+
+
+
+
+@media (max-width: 330px){
+    html{
+        font-size: 40%;
+        overflow-x: hidden;
+    }
+
+    #icon-utk-menu{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100vw;
+        padding: 1rem 4%;
+        background: #0d1b2a;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        transition: .25s ease;
+        transition-delay: .25s;
+    }
+
+    .navbar.active{
+        left: 0;
+        transition-delay: 0s;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .testing{
+        display: grid;
+        grid-template-columns: repeat(4,80px);
+        grid-template-rows: repeat(3,200px);
+    }
+
+    .item1{
+        margin-top: 14rem;
+        margin-left: 10rem;
+        grid-area: 2/ 1/ 4/ 4;
+        text-align: center;
+    }
+
+    .item1 p{
+        font-size: 1.5rem;
+    }
+    
+    .item1 h3{
+        margin-left: 2rem;
+        font-size: 1.7rem;
+    }
+    
+    .item1 span{
+        font-size: 3rem;
+    }
+    
+    .item1 li{
+        font-size: 1.5rem;
+        line-height: 1.2;
+        margin-left: 2rem;
+    }
+    
+    .item1 li span{
+        font-size: 2.5rem;
+    }
+
+    .item3{
+        grid-area: 1 / 1/ 6/ 6;
+        margin-top: 10rem;
+    }
+
+    .item3 img{
+        width: 88%;
+        height: 40%;
+        margin-left: 2.9rem;
+        border-radius: 1.5rem;
+    }
+
+    #image-track {
+        margin-top: 40rem;
+    }
+
+    span::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 250%;
+        background: #0d1b2a;
+        animation: anime 1s ease forwards;
+        animation-delay: .9s;
+    }
+
+    .container .text{
+        visibility: hidden;
+    }
+
+    .movingPic{
+        overflow-y: hidden;
+    }
+
+    .textMenu{
+        position: relative;
+        bottom: 4rem;
+        left: 13.5rem;
+        font-size: 2rem;
+    }
+}
+
+
 
 @media only screen and (min-width: 320px){
     /* Awal Footer */
@@ -818,5 +1185,6 @@ span::before{
    /* Akhir Footer */
    
 }
+
 
 

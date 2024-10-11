@@ -16,12 +16,6 @@ html{
 body {
     background: #0d1b2a;
     color: #e5e5e5;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     /* overflow: hidden; */
 }
 
@@ -160,11 +154,22 @@ body {
 
 }
 
+
+.box-container_basic {  
+    height: 2000px;
+    border-radius: 10px;
+    background-color: #FF6B6B;
+}
+
+
+
 .box-container_0{
-    /* background-color: #bf59ac; */
     height: 9vh;
 }
-    /* Akhir Navbar */
+
+
+
+/* <--  AKHIR NAVBAR --> */
 
 
 
@@ -177,8 +182,8 @@ body {
     text-align: center;
     width: 100%;
     max-width: 400px;
-    margin: 10rem auto 2rem; /* Adjusted to create space from header and footer */
-    flex-grow: 1; /* Allows content to grow and push footer down */
+    margin: 10rem auto 2rem;
+    flex-grow: 1;
 }
 
 .pesan-form {
@@ -210,14 +215,10 @@ body {
 }
 
 
-
-
-
-    /* Awal Footer */
+/* Footer */
 
 .box-container_4 {
     height: 400px;
-    /* background-color: antiquewhite;  */
     border-radius: 10px;
     display: flex;
     padding-left: 8%;
@@ -256,12 +257,10 @@ body {
     font-weight: bold;
 }
 
-
 .box-container_4_1 {
     width: 28%;
     height: 200px;
     border-radius: 10px;
-    /* background-color: rgb(222, 163, 86); */
     
 }
 
@@ -269,7 +268,6 @@ body {
     width: 28%;
     height: 380px;
     border-radius: 10px;
-    /* background-color: rgb(222, 163, 86); */
     display: flex;
     
 }
@@ -278,33 +276,28 @@ body {
     width: 50%;
     height: 200px;
     border-radius: 10px;
-    /* background-color: rgb(128, 39, 113); */
 }
 
 .box-container_4_2_2 {
     width: 50%;
     height: 200px;
     border-radius: 10px;
-    /* background-color: rgb(57, 207, 102); */
 }
 
-/* Atur warna default untuk link */
 .box-container_4_2 a:link, 
 .box-container_4_2 a:visited {
-    color: #ffffff; /* Warna default link */
-    text-decoration: none; /* Menghilangkan garis bawah pada link */
-    transition: color 1.5s ease; /* Animasi transisi saat berubah warna */
+    color: #ffffff; 
+    text-decoration: none; 
+    transition: color 1.5s ease;
 }
 
-/* Ubah warna saat di-hover */
 .box-container_4_2 a:hover {
-    color: #ff6b6b; /* Warna saat link di-hover */
-    text-decoration: none; /* Opsional: menambahkan garis bawah saat di-hover */
+    color: #ff6b6b; 
+    text-decoration: none; 
 }
 
-/* Jika ingin mengubah warna saat link aktif diklik */
 .box-container_4_2 a:active {
-    color: #ff6b6b; /* Warna saat link aktif */
+    color: #ff6b6b; 
 }
 
 
@@ -312,7 +305,6 @@ body {
     width: 28%;
     height: 380px;
     border-radius: 10px;
-    /* background-color: rgb(222, 163, 86); */
     display: flex;    
     flex-direction: column;
 }
@@ -320,41 +312,36 @@ body {
 .box-container_4_3_1 {
     width: 100%;
     height: 80px;
-    /* background-color: silver; */
     border-radius: 10px;
 }
 
 .box-container_4_3_2 {
     width: 100%;
     height: 220px;
-    /* background-color: darkkhaki; */
     border-radius: 10px;
 }
 
 .box-container_4_3_3 {
     width: 100%;
     height: 90px;
-    /* background-color: rgb(85, 150, 138); */
     border-radius: 10px;
 }
 
 .naik p {
-    font-family: "Helvetica Neue", "Oswald", Helvetica, Arial, sans-serif; /* Font yang Anda pilih */
     font-size: 16px;
     font-weight: bold;
     color: #ffffff;
-    transition: color 1s ease-in-out, transform 0.5s ease-in-out; /* Animasi yang diinginkan */
+    transition: color 1s ease-in-out, transform 0.5s ease-in-out;
     cursor: pointer;
 }
 
-
 .naik p:hover {
-    color: #FF6B6B; /* Warna saat hover */
-    transform: scale(1.009); /* Efek zoom saat di-hover */
+    color: #FF6B6B; 
+    transform: scale(1.009);
 }
 
-/* belum responsive */
-/* media */
+
+/* media query untuk responsif*/
 
 @media only screen and (min-width: 320px){
 
@@ -591,26 +578,21 @@ body {
     }
     .box-container_4_3_2 {
         width: 100%;
-    }
-    /* Akhir Footer */
-    
+    }    
 }
 
 
 
 @media only screen and (min-width: 1200px){
-
     h1 {
         font-size: 45px;
     }
-    
     h2 {
         font-size: 20px;
     }
     h3 {
         font-size: 30px;
     }
-
 
     .box-container_1 h1 {
         font-size: 70px;
@@ -652,7 +634,6 @@ body {
      .box-container_2_2 {
         height: auto;
         width: 60%;
-        /* position: relative; */
      }
     
      .box-container_2_1 .text-overlay {
@@ -663,17 +644,18 @@ body {
         display: flex;
         flex-direction: row;
         height: auto;
-    
      }
 
      .box-container_3_1 {
         height: auto;
         width: 50%;
      }
+
      .box-container_3_1_1 {
         height: 15%;
         width: 100%;
      }
+
      .box-container_3_1_2 {
         height: 85%;
         width: 100%;
@@ -682,11 +664,11 @@ body {
      .box-container_3_1_1 .text-overlay {
         font-size: 60px;
      }
+
      .box-container_3_1_2 li, .box-container_3_1_2 p, .box-container_3_1_2 h3 {
         font-size: 25px;
      }
 
-     /* Awal Footer */
      .box-container_4 {
         display: flex;
         flex-direction: row;
@@ -715,32 +697,69 @@ body {
         width: 33.33%;
         height: auto;
     }
+
     .box-container_4_2 {
         position: relative;
         width: 33.33%;
         height: auto;
     }
+
     .box-container_4_2_1 {
         width: 100%;
         height: auto;
     }
+
     .box-container_4_2_2 {
         width: 100%;
         height: auto;
     }
+
     .box-container_4_3 {
         height: auto;
         width: 33.33%;
     }
+
     .box-container_4_3_2 {
         width: 100%;
         height: auto;
     }
+
     .box-container_4_3_3 {
         margin-top: 2rem;
         width: 100%;
         height: auto;
     }
-    /* Akhir Footer */
-    
+}
+
+@media (max-width: 768px){
+    .header{
+        background: #0d1b2a;
+    }
+
+    #icon-utk-menu{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 1rem 4%;
+        background: #0d1b2a;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        transition: .25s ease;
+        transition-delay: .25s;
+    }
+
+    .navbar.active{
+        left: 0;
+        transition-delay: 0s;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
 }

@@ -6,12 +6,15 @@ $(document).ready(function() {
         $('.navbar').toggleClass('active');
     });
 
+
     // Membuat alert jika href "#error" diklik
     $('a[href="#error"]').click(function(event) {
         event.preventDefault();
         // Menampilkan pesan "Coming Soon !" saat link diklik
         alert('Coming Soon !');
     });
+
+
 
     // Fungsi yang dijalankan saat pengguna scroll halaman
     $(window).scroll(function() {
@@ -27,7 +30,6 @@ $(document).ready(function() {
                 $('header nav a[href*=' + id + ']').addClass('active');
             }
         });
-
         // Menambahkan atau menghapus class "scroll" pada elemen header
         $('header').toggleClass('scroll', $(window).scrollTop() > 100);
 
@@ -35,5 +37,20 @@ $(document).ready(function() {
         $('#icon-utk-menu').removeClass('bx-x');
         // Menutup menu navigasi dengan menghapus class "active" dari elemen navbar
         $('.navbar').removeClass('active');
+    });
+});
+
+$(document).ready(function () {
+    $('#menuSearch').on('input', function () {
+        var searchTerm = $(this).val().toLowerCase();
+
+        $('.menu-item').each(function () {
+            var menuName = $(this).find('h2').text().toLowerCase();
+            if (menuName.includes(searchTerm)) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+        });
     });
 });

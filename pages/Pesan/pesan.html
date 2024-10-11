@@ -10,94 +10,102 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="/jquery/jquery"></script>
 </head>
-
 <body>
-        <!-- Batas Atas Navbar -->
-        <header class="header">
-            <a href="#" class="logo">T-Gym</a>
-            <!-- gambar logo belum-->
+    <!-- header -->
+    <header class="header">
+        <a href="#" class="logo">T-Gym</a>
+        <!-- gambar logo belum-->
+
+        <!-- burger icon -->
+        <div class="bx bx-menu"id="icon-utk-menu"></div>
     
-            <div class="bx bx-menu"id="icon-utk-menu"></div>
-    
-    
-            <nav class="navbar">
-                <a href="/index.html">Beranda</a>
-                <a href="/index.html">Manfaat</a>
-                <a href="/pages/Jenis/hipertropi.html">Latihan</a>
-                <a href="/pages/Menu/index.html">Menu</a>
-                <a href="/index.html">Kembali</a>
-            </nav>
-        </header>
+        <!-- navbar -->
+        <nav class="navbar">
+            <a href="/index.html">Beranda</a>
+            <a href="/index.html">Manfaat</a>
+            <a href="/pages/Jenis/hipertropi.html">Latihan</a>
+            <a href="/pages/Menu/index.html">Menu</a>
+            <a href="/index.html">Kembali</a>
+        </nav>
+    </header>
 
-        <div class="box-container_0"></div>
-        
-        <!-- Batas Bawah Navbar -->
+    <!-- isi element pesan -->
+    <div class="pesan-container">
+        <h1>Kirim Pesan Anda</h1>
+        <form class="pesan-form" action="#">
+            <input type="text" id="nama" class="input-field" placeholder="Nama Anda..." required>
+            <input type="email" id="email" class="input-field" placeholder="Email Anda..." required>
+            <textarea id="pesan" class="input-field" placeholder="Pesan Anda..." required></textarea>
+            <button type="submit" class="submit-btn">Kirim Pesan</button>
+        </form>
+        <p id="response-message"></p>
+    </div>
 
-        <div class="pesan-container">
-            <h1>Kirim Pesan Anda</h1>
-            <form class="pesan-form" action="#">
-                <input type="text" id="nama" class="input-field" placeholder="Nama Anda..." required>
-                <input type="email" id="email" class="input-field" placeholder="Email Anda..." required>
-                <textarea id="pesan" class="input-field" placeholder="Pesan Anda..." required></textarea>
-                <button type="submit" class="submit-btn">Kirim Pesan</button>
-            </form>
-            <p id="response-message"></p>
-        </div>
-
-
-        <!-- Awal Footer -->
+    <!-- Footer -->
     <div class="box-container_4">
         <div class="box-container_4_1" id="contact">
             <br><br>
             <h1>Lokasi</h1><br>
             <h2>Address: </h2> 
             <h3>Jl. Letjen S. Parman No.1, RT.6/RW.16, Tomang, Kec. Grogol petamburan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11440</h3> <br>
-                <h2>Instagram: </h2>
-                <h3>limitlessfitness.id</h3> <br>
-                <h2>Buka:</h2>
-                <h3>Senin - Jumat: Mulai 8.00 - 17.00</h3>
+            <h2>Instagram: </h2>
+            <h3>limitlessfitness.id</h3> <br>
+            <h2>Buka:</h2>
+            <h3>Senin - Jumat: Mulai 8.00 - 17.00</h3>
         </div>
-        <div class="box-container_4_2">
-            <div class="box-container_4_2_1">
-                <br><br>
-                <h1>Tautan</h1> <br>
-                <h3><a href="/index.html">Beranda</a></h3> <br>
-                <h3><a href="/pages/Jenis/hipertropi.html" target="_blank">Hipertropi</a></h3> <br>
-                <h3><a href="/pages/WeightLoss/index.html" target="_blank">WeightLoss</a></h3> <br>
-                <h3> <a href="/pages/Menu/index.html" class="tautan-pesan">Menu</a></h3><br>
-                <h3> <a href="/pages/Pesan/pesan.html" class="tautan-pesan">Kirim Pesan</a></h3>
-                <h3> <a href="/pages/Tampilan Testimoni/index.html" class="Testimoni">Testimoni</a></h3>
+
+    <!--  -->
+    <div class="box-container_4_2">
+        <div class="box-container_4_2_1">
+            <br><br>
+            <h1>Tautan</h1> <br>
+            <h3><a href="/index.html">Beranda</a></h3> <br>
+            <h3><a href="/pages/Jenis/hipertropi.html" target="_blank">Hipertropi</a></h3> <br>
+            <h3><a href="/pages/WeightLoss/index.html" target="_blank">WeightLoss</a></h3> <br>
+            <h3> <a href="/pages/Menu/index.html" class="tautan-pesan">Menu</a></h3><br>
+            <h3> <a href="/pages/Pesan/pesan.html" class="tautan-pesan">Kirim Pesan</a></h3>
+
+        </div>
+
+        <!--  -->
+        <div class="box-container_4_2_2">
+            <br><br><br>
+            <h1><br></h1>
+            <h3><a href="https://www.facebook.com" target="_blank">Facebook</a></h3> <br>
+            <h3><a href="https://www.instagram.com" target="_blank">Instagram</a></h3> <br>
+            <h3><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></h3> <br>
+            <h3><a href="https://www.x.com" target="_blank">Twitter</a></h3> <br>
+            <h3><a href="https://www.facebook.com" target="_blank">Facebook</a></h3> <br>
+        </div>            
+    </div>
+
+    <!--  -->
+    <div class="box-container_4_3">
+        <div class="box-container_4_3_1">
+            <br><br>
+            <h1>Tentang</h1>
+        </div>
+
+        <!--  -->
+        <div class="box-container_4_3_2">
+            <div class="naik">
+                <p>Kami menyediakan pilihan program latihan(Hipertropi,Latihan Kekuatan, dan program Turun Beban). 
+                    Program latihan yang kami sediakan berdasarkan riset ternama,
+                    kami menyediakan beberapa tingkatan kesulitan program juga sehingga dapat disesuaikan dengan kebutuhan anda.</p>
+
+
+
             </div>
-            <div class="box-container_4_2_2">
-                <br><br><br>
-                <h1><br></h1>
-                <h3><a href="https://www.facebook.com" target="_blank">Facebook</a></h3> <br>
-                <h3><a href="https://www.instagram.com" target="_blank">Instagram</a></h3> <br>
-                <h3><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></h3> <br>
-                <h3><a href="https://www.x.com" target="_blank">Twitter</a></h3> <br>
-                <h3><a href="https://www.facebook.com" target="_blank">Facebook</a></h3> <br>
-            </div>
+        </div>
             
-        </div>
-        <div class="box-container_4_3">
-            <div class="box-container_4_3_1">
-                <br><br>
-                <h1>Tentang</h1>
-            </div>
-            <div class="box-container_4_3_2">
-                <div class="naik">
-                    <p>Kami menyediakan pilihan program latihan(Hipertropi,Latihan Kekuatan, dan program Turun Beban). 
-                        Program latihan yang kami sediakan berdasarkan riset ternama,
-                        kami menyediakan beberapa tingkatan kesulitan program juga sehingga dapat disesuaikan dengan kebutuhan anda.</p>
-                </div>
-            </div>
+        <!--  -->
             <div class="box-container_4_3_3">
                 <h2>0896-5480-8887</h2>
             </div>
         </div>
     </div>
-    <!-- section 4 end -->
-    <br>
+<!----------------->
+
     <script src="script.js"></script>
 </body>
 </html>
