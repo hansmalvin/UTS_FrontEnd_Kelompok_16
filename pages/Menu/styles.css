@@ -99,8 +99,7 @@ body {
 
 /*CSS MENU*/
 .menu-container {
-    /*  kontainer ke tengah,padding
-       dan memberikan border */
+
     text-align: center;
     padding: 50px 20px;
     border-radius: 10px;
@@ -108,7 +107,6 @@ body {
 
 /* untuk search bar nya */
 
-
 .search-bar {
     text-align: center;
     margin-bottom: 20px;
@@ -126,37 +124,10 @@ body {
 .search-bar input:focus {
     border-color: #FF6B6B;
 }
-
-
-
-/*  */
-
-
-/* untuk search bar nya */
-
-.search-bar {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.search-bar input {
-    padding: 10px;
-    width: 50%;
-    font-size: 1.5rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    outline: none;
-}
-
-.search-bar input:focus {
-    border-color: #FF6B6B;
-}
-
 /*==========*/
 
 
 h1 {
-    /*ukuran font judul dan jarak bawah */
     font-size: 2.5rem;
     margin-bottom: 30px;
 }
@@ -226,10 +197,6 @@ h1 {
     color: red;
 }
 
-
-
-/* tombol Lihat Resep */
-/*Button*/
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -243,7 +210,6 @@ h1 {
     cursor: pointer;
 }
 
-/*Hover pada button lihat resep*/
 .btn:hover {
     background-color: #e55a5a;
 }
@@ -557,10 +523,4 @@ p:hover {
        width: 100%;
        height: auto;
    }
-   /* Akhir Footer */
-   
 }
-
-
-
-/* belum responsive */

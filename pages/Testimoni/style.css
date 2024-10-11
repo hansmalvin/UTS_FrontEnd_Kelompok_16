@@ -6,11 +6,11 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
     padding: 0;
     margin: 0;
     height: 100vh;
     width: 100%;
+    background: #0d1b2a;
 }
 
 .testimonial-container {
@@ -157,5 +157,5 @@ button:hover {
 }
 
 .back-btn i {
-    margin-right: 5px; /* Icon spacing */
+    margin-right: 5px;
 }
