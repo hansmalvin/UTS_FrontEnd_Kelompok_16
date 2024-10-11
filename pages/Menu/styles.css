@@ -173,41 +173,54 @@ body {
     background-color: #f5f5f5;
 } */
 
+/*CSS MENU*/
 .menu-container {
+    /*  kontainer ke tengah,padding
+       dan memberikan border */
     text-align: center;
     padding: 50px 20px;
     border-radius: 10px;
-    /* background-color: #ff6b6b; */
 }
 
 h1 {
+    /*ukuran font judul dan jarak bawah */
     font-size: 2.5rem;
     margin-bottom: 30px;
 }
 
 .menu-grid {
+    /* layout grid yang fleksibel,kolom otomatis sesuai lebar */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* jarak antar grid */
     gap: 20px;
+    /* Mengatur lebar maksimum grid dan grid berada di tengah  */
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .menu-item {
+    /* Background putih, border melengkung, dan padding di dalam item menu */
     background-color: white;
     border-radius: 12px;
     padding: 20px;
+    /* Memberikan shadow */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* perataan tengah */
     text-align: center;
+    /* transisi hover */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .menu-item:hover {
+    /* Efek hover*/
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .menu-item img {
+    /* Mengatur ukuran gambar lingkaran,
+       dan memberikan jarak di bawah gambar */
     width: 80px;
     height: 80px;
     object-fit: cover;
@@ -216,28 +229,34 @@ h1 {
 }
 
 .menu-item h2 {
+    /* Mengatur ukuran font dan jarak bawah pada judul item menu*/
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #000;
 }
 
 .menu-item p {
+    /* Mengatur ukuran font dan warna abu-abu pada deskripsi item menu */
     font-size: 0.9rem;
     color: gray;
     margin-bottom: 10px;
 }
 
 .menu-item span {
+    /* Mengatur ukuran font dan warna teks pada harga atau info tambahan */
     font-size: 1rem;
     color: #333;
 }
 
 .menu-item strong {
+    /* Memberi warna merah pada teks tebal */
     color: red;
 }
 
 
+
 /* tombol Lihat Resep */
+/*Button*/
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -251,6 +270,7 @@ h1 {
     cursor: pointer;
 }
 
+/*Hover pada button lihat resep*/
 .btn:hover {
     background-color: #e55a5a;
 }
